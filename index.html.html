@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAUM 郭河音 · 夏日入坑安利站 | 하음 입덕 가이드</title>
+<meta name="description" content="KiiiKiii Haum（곽하음）中文安利站 — 个人介绍、概念照、直拍、Cover舞台、直播、TMI">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fffaf3;--bg-alt:#fff5e6;--card:#ffffff;
+  --coral:#ff6b4a;--peach:#ff9a76;--sun:#ffc93c;
+  --sky:#4ec3f7;--mint:#3ddc97;--grape:#a855f7;
+  --text:#2d2a26;--dim:#8a8279;
+  --line:rgba(45,42,38,.1);--radius:16px;
+  --shadow:0 8px 30px -10px rgba(255,107,74,.2);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'Noto Sans SC','Noto Sans KR','PingFang SC','Malgun Gothic',sans-serif;
+  line-height:1.6;letter-spacing:.03em;overflow-x:hidden;
+}
+.ko,[lang="ko"]{word-break:keep-all;letter-spacing:.02em;}
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background:var(--bg-alt);}
+::-webkit-scrollbar-thumb{background:linear-gradient(var(--coral),var(--sun));border-radius:6px;}
+::selection{background:var(--sun);color:#2d2a26;}
+body::before{
+  content:'';position:fixed;inset:0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,201,60,.08) 0%, transparent 50%),
+    radial-gradient(circle at 85% 70%, rgba(78,195,247,.06) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255,107,74,.04) 0%, transparent 60%);
+  pointer-events:none;z-index:0;
+}
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,250,243,.92);backdrop-filter:blur(16px);
+  border-bottom:2px solid rgba(255,201,60,.3);
+}
+.nav-inner{
+  max-width:1200px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:22px;
+  overflow-x:auto;scrollbar-width:none;
+}
+.nav-inner::-webkit-scrollbar{display:none;}
+.nav-logo{
+  font-weight:900;font-size:1.05rem;letter-spacing:.08em;
+  color:var(--coral);white-space:nowrap;flex-shrink:0;
+  text-shadow:0 2px 8px rgba(255,107,74,.25);
+}
+.nav-links{display:flex;gap:18px;list-style:none;}
+.nav-links a{
+  color:var(--dim);text-decoration:none;font-size:.82rem;
+  white-space:nowrap;padding:4px 0;position:relative;
+  transition:color .25s;display:flex;flex-direction:column;line-height:1.25;
+}
+.nav-links a .ko{font-size:.72rem;opacity:.6;}
+.nav-links a:hover,.nav-links a.active{color:var(--coral);}
+.nav-links a::after{
+  content:'';position:absolute;left:0;bottom:-2px;width:0;height:3px;
+  border-radius:2px;background:linear-gradient(90deg,var(--coral),var(--sun));
+  transition:width .3s;
+}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%;}
+section{
+  position:relative;z-index:1;max-width:1200px;
+  margin:0 auto;padding:88px 20px;scroll-margin-top:70px;
+}
+.sec-head{margin-bottom:44px;}
+.sec-num{
+  font-family:'Press Start 2P',monospace;font-size:.6rem;
+  color:var(--coral);letter-spacing:.1em;display:block;margin-bottom:12px;
+}
+.sec-title{font-size:clamp(1.7rem,4.5vw,2.7rem);font-weight:900;line-height:1.2;color:var(--text);}
+.sec-title .hl{
+  background:linear-gradient(92deg,var(--coral),var(--sun));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.sec-sub{color:var(--dim);font-size:.9rem;margin-top:8px;font-weight:400;}
+.sec-line{
+  height:3px;width:80px;margin-top:18px;border-radius:2px;
+  background:linear-gradient(90deg,var(--coral),var(--sun),transparent);
+}
+.hero{
+  max-width:none;padding:0;min-height:88vh;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#fff5e6 0%,#ffe8d6 40%,#e6f6ff 100%);
+}
+.hero-glow{position:absolute;border-radius:50%;filter:blur(100px);opacity:.35;}
+.hero-glow.g1{width:400px;height:400px;background:var(--sun);top:-80px;left:-60px;}
+.hero-glow.g2{width:360px;height:360px;background:var(--sky);bottom:-100px;right:-50px;}
+.hero-glow.g3{width:240px;height:240px;background:var(--peach);top:50%;left:55%;opacity:.25;}
+.hero-content{position:relative;z-index:2;text-align:center;padding:80px 20px;max-width:900px;}
+.hero-tag{
+  display:inline-block;font-size:.7rem;letter-spacing:.22em;
+  color:var(--coral);border:2px solid rgba(255,107,74,.35);
+  padding:6px 18px;border-radius:100px;margin-bottom:26px;
+  background:rgba(255,255,255,.7);
+}
+.hero-name{
+  font-size:clamp(3.2rem,12vw,7rem);font-weight:900;line-height:.95;
+  letter-spacing:.02em;color:var(--text);
+}
+.hero-name .accent{
+  background:linear-gradient(92deg,var(--coral),var(--sun),var(--sky));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero-ko{font-size:clamp(1rem,3.2vw,1.5rem);color:var(--dim);margin-top:14px;font-weight:500;}
+.hero-desc{margin-top:26px;font-size:.92rem;color:var(--dim);max-width:520px;margin-left:auto;margin-right:auto;}
+.hero-meta{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.hero-chip{
+  font-size:.74rem;padding:8px 16px;border-radius:100px;
+  border:1px solid rgba(45,42,38,.1);background:rgba(255,255,255,.8);
+  color:var(--text);box-shadow:0 2px 10px rgba(0,0,0,.04);
+}
+.hero-chip b{color:var(--coral);font-weight:700;}
+.hero-photo{
+  position:relative;z-index:2;margin:0 auto 28px;
+  width:200px;height:200px;border-radius:50%;
+  overflow:hidden;border:4px solid #fff;
+  box-shadow:0 12px 40px -8px rgba(255,107,74,.35), 0 0 0 8px rgba(255,201,60,.15);
+  background:#fff5e6;
+}
+.hero-photo img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 25%;
+  display:block;
+}
+.hero-photo-glow{
+  position:absolute;inset:-10px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,201,60,.3),transparent 70%);
+  z-index:-1;animation:pulse 4s ease-in-out infinite;
+}
+.sun-deco{
+  position:absolute;right:6%;top:16%;width:120px;height:120px;border-radius:50%;
+  background:radial-gradient(circle,var(--sun) 0%,var(--peach) 60%,transparent 70%);
+  opacity:.5;animation:pulse 4s ease-in-out infinite;z-index:1;
+}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:.5;}50%{transform:scale(1.15);opacity:.7;}}
+.wave{position:absolute;bottom:-2px;left:0;width:100%;height:60px;z-index:3;}
+.wave svg{display:block;width:100%;height:100%;}
+.quick-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;margin-bottom:52px;
+}
+.quick-card{
+  background:var(--card);border:1px solid rgba(255,201,60,.25);
+  border-radius:var(--radius);padding:22px 20px;
+  transition:transform .3s,box-shadow .3s;
+  position:relative;overflow:hidden;
+  box-shadow:0 4px 20px -8px rgba(255,107,74,.1);
+}
+.quick-card::before{
+  content:'';position:absolute;top:0;left:0;width:100%;height:4px;
+  background:linear-gradient(90deg,var(--coral),var(--sun));
+  transform:scaleX(0);transform-origin:left;transition:transform .35s;
+  border-radius:4px 4px 0 0;
+}
+.quick-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px -10px rgba(255,107,74,.25);}
+.quick-card:hover::before{transform:scaleX(1);}
+.quick-icon{font-size:1.6rem;margin-bottom:12px;display:block;}
+.quick-card h4{font-size:.94rem;font-weight:700;margin-bottom:6px;color:var(--text);}
+.quick-card .ko{font-size:.78rem;color:var(--dim);display:block;font-weight:400;}
+.top5-title{
+  font-size:1.15rem;font-weight:800;margin-bottom:22px;
+  display:flex;align-items:center;gap:10px;
+}
+.top5-title::before{
+  content:'';width:5px;height:22px;border-radius:3px;
+  background:linear-gradient(var(--coral),var(--sun));
+}
+.top5-list{display:flex;flex-direction:column;gap:12px;}
+.top5-item{
+  display:flex;gap:18px;align-items:flex-start;
+  background:var(--card);border:1px solid rgba(255,201,60,.2);
+  border-left:4px solid var(--sun);border-radius:12px;padding:18px 20px;
+  transition:transform .25s,box-shadow .25s;
+  box-shadow:0 2px 12px -6px rgba(0,0,0,.05);
+}
+.top5-item:hover{transform:translateX(5px);box-shadow:0 6px 20px -8px rgba(255,107,74,.2);}
+.top5-rank{
+  font-family:'Press Start 2P',monospace;font-size:.9rem;
+  color:var(--coral);flex-shrink:0;padding-top:3px;
+}
+.top5-body h5{font-size:.95rem;font-weight:700;margin-bottom:5px;color:var(--text);}
+.top5-body p{font-size:.82rem;color:var(--dim);}
+.top5-body .ko{display:block;font-size:.78rem;color:rgba(138,130,121,.7);margin-top:3px;}
+.about-block{
+  margin-bottom:52px;display:grid;
+  grid-template-columns:52px 1fr;gap:22px;align-items:start;
+}
+.about-num{font-family:'Press Start 2P',monospace;font-size:.72rem;color:var(--coral);padding-top:8px;}
+.about-body h3{font-size:1.15rem;font-weight:800;margin-bottom:6px;color:var(--coral);}
+.about-body h3 .ko{display:block;font-size:.82rem;color:var(--dim);font-weight:400;margin-top:2px;}
+.about-body p{font-size:.9rem;color:rgba(45,42,38,.8);margin-top:12px;}
+.about-body p.ko{font-size:.82rem;color:rgba(45,42,38,.5);margin-top:6px;}
+
+/* ============ 概念照 ============ */
+.concept-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px;}
+.concept-tab{
+  padding:10px 20px;border-radius:100px;border:2px solid rgba(255,201,60,.3);
+  background:rgba(255,255,255,.7);color:var(--dim);font-size:.8rem;
+  cursor:pointer;transition:all .25s;font-family:inherit;
+  display:flex;flex-direction:column;align-items:center;line-height:1.3;
+}
+.concept-tab .ko{font-size:.7rem;opacity:.65;}
+.concept-tab:hover{color:var(--coral);border-color:var(--coral);}
+.concept-tab.active{
+  background:linear-gradient(92deg,var(--coral),var(--peach));
+  color:#fff;font-weight:700;border-color:transparent;
+  box-shadow:0 6px 20px -6px rgba(255,107,74,.5);
+}
+.concept-tab.active .ko{opacity:.85;color:#fff;}
+
+.concept-viewer{display:flex;flex-direction:column;gap:14px;}
+
+.concept-selector{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px;}
+.concept-chip{
+  padding:8px 16px;border-radius:100px;
+  border:1.5px solid rgba(255,201,60,.35);
+  background:rgba(255,255,255,.75);
+  color:var(--dim);font-size:.76rem;
+  cursor:pointer;transition:all .22s;
+  font-family:inherit;
+  display:flex;flex-direction:column;align-items:center;line-height:1.3;
+}
+.concept-chip .ko{font-size:.64rem;opacity:.6;}
+.concept-chip:hover{color:var(--coral);border-color:var(--coral);}
+.concept-chip.active{
+  background:linear-gradient(92deg,var(--coral),var(--peach));
+  color:#fff;font-weight:700;border-color:transparent;
+  box-shadow:0 4px 14px -4px rgba(255,107,74,.5);
+}
+.concept-chip.active .ko{opacity:.85;color:#fff;}
+
+.concept-cover{
+  position:relative;width:100%;aspect-ratio:16/10;
+  border-radius:var(--radius);overflow:hidden;
+  border:2px solid rgba(255,201,60,.2);background:var(--bg-alt);
+  box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:center;
+}
+.concept-cover img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 22%;
+  display:block;
+}
+.concept-cover .ph{
+  width:100%;height:100%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:8px;text-align:center;padding:24px;
+}
+.concept-cover .ph .ph-title{
+  font-size:clamp(1.2rem,3.5vw,1.8rem);font-weight:900;color:#fff;
+  text-shadow:0 2px 18px rgba(0,0,0,.5);
+}
+.concept-cover .ph .ph-sub{
+  font-size:.8rem;color:rgba(255,255,255,.9);max-width:520px;
+}
+.concept-info{
+  display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;
+  background:var(--card);border:1px solid rgba(255,201,60,.25);
+  border-radius:var(--radius);padding:20px 22px;
+  box-shadow:0 4px 20px -10px rgba(255,107,74,.1);
+}
+.concept-desc{font-size:.84rem;color:rgba(45,42,38,.8);line-height:1.7;}
+.concept-desc .ko{display:block;color:rgba(45,42,38,.5);font-size:.76rem;margin-top:6px;}
+.btn-weibo{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:100px;
+  background:linear-gradient(92deg,var(--coral),var(--peach));
+  color:#fff;font-weight:700;font-size:.82rem;
+  text-decoration:none;white-space:nowrap;
+  box-shadow:0 8px 20px -8px rgba(255,107,74,.6);
+  transition:transform .25s,box-shadow .25s;
+}
+.btn-weibo:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 26px -8px rgba(255,107,74,.8);
+}
+.btn-weibo .ko{font-size:.68rem;opacity:.85;font-weight:400;}
+
+@media(max-width:768px){
+  .concept-cover{aspect-ratio:4/5;}
+  .concept-cover img{object-position:center 20%;}
+  .concept-info{grid-template-columns:1fr;gap:14px;}
+  .btn-weibo{justify-content:center;width:100%;}
+}
+
+/* ============ 直拍 ============ */
+.fancam-tabs{display:flex;gap:12px;margin-bottom:28px;flex-wrap:wrap;}
+.fancam-tab{
+  padding:12px 28px;border-radius:100px;border:2px solid rgba(255,201,60,.3);
+  background:rgba(255,255,255,.7);color:var(--dim);font-size:.86rem;
+  font-weight:600;cursor:pointer;font-family:inherit;transition:all .25s;
+}
+.fancam-tab:hover{color:var(--coral);border-color:var(--coral);}
+.fancam-tab.active{
+  background:var(--coral);color:#fff;border-color:transparent;
+  box-shadow:0 6px 20px -6px rgba(255,107,74,.5);
+}
+details.song{
+  border:1px solid rgba(255,201,60,.25);border-radius:14px;
+  margin-bottom:12px;background:var(--card);overflow:hidden;
+  transition:border-color .25s;box-shadow:0 2px 12px -8px rgba(0,0,0,.06);
+}
+details.song[open]{border-color:rgba(255,107,74,.35);}
+details.song summary{
+  padding:16px 20px;cursor:pointer;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:12px;font-weight:700;font-size:.94rem;transition:background .2s;
+}
+details.song summary::-webkit-details-marker{display:none;}
+details.song summary:hover{background:rgba(255,201,60,.08);}
+.summary-left{display:flex;align-items:center;gap:12px;}
+.summary-left .dot{
+  width:10px;height:10px;border-radius:50%;
+  background:linear-gradient(135deg,var(--coral),var(--sun));flex-shrink:0;
+}
+.summary-left .ko{font-size:.74rem;color:var(--dim);font-weight:400;display:block;}
+.summary-arrow{color:var(--coral);font-size:.9rem;transition:transform .3s;}
+details[open] .summary-arrow{transform:rotate(180deg);}
+.cam-list{padding:6px 20px 20px;display:flex;flex-direction:column;gap:12px;}
+.cam-item{
+  display:flex;gap:16px;align-items:center;background:var(--bg-alt);
+  border-radius:12px;padding:12px;transition:background .25s,transform .25s,box-shadow .25s;
+  text-decoration:none;color:inherit;border:1px solid transparent;
+}
+.cam-item:hover{
+  background:#fff;border-color:rgba(255,107,74,.2);
+  transform:translateX(4px);box-shadow:0 4px 16px -6px rgba(255,107,74,.15);
+}
+.cam-thumb{
+  width:104px;height:62px;flex-shrink:0;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;position:relative;overflow:hidden;background:#f0ebe3;
+}
+.cam-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+.cam-thumb::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.12);pointer-events:none;}
+.cam-thumb span{position:relative;z-index:2;}
+.cam-info{flex:1;min-width:0;}
+.cam-info h5{
+  font-size:.86rem;font-weight:700;margin-bottom:4px;
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+}
+.cam-date{
+  font-family:'Press Start 2P',monospace;font-size:.5rem;color:var(--coral);
+  background:rgba(255,107,74,.1);padding:3px 7px;border-radius:4px;
+  border:1px solid rgba(255,107,74,.2);
+}
+.cam-play{
+  font-family:'Press Start 2P',monospace;font-size:.5rem;color:var(--mint);
+  background:rgba(61,220,151,.12);padding:3px 7px;border-radius:4px;
+  border:1px solid rgba(61,220,151,.25);
+}
+.cam-type{
+  font-size:.66rem;padding:3px 10px;border-radius:100px;
+  background:rgba(255,201,60,.15);color:#b8860b;
+  border:1px solid rgba(255,201,60,.3);
+}
+.cam-info p{font-size:.76rem;color:var(--dim);}
+.cam-info p .ko{display:block;color:rgba(138,130,121,.65);font-size:.72rem;}
+.cam-go{
+  font-size:.7rem;color:var(--coral);border:1.5px solid rgba(255,107,74,.4);
+  padding:6px 14px;border-radius:100px;white-space:nowrap;flex-shrink:0;
+  transition:all .25s;
+}
+.cam-item:hover .cam-go{background:var(--coral);color:#fff;font-weight:700;}
+
+/* ============ Cover ============ */
+.cover-list{display:flex;flex-direction:column;gap:26px;}
+.cover-card{
+  background:var(--card);border:1px solid rgba(255,201,60,.25);
+  border-radius:var(--radius);overflow:hidden;
+  transition:box-shadow .3s;box-shadow:0 4px 20px -10px rgba(255,107,74,.1);
+}
+.cover-card:hover{box-shadow:0 16px 40px -16px rgba(255,107,74,.25);}
+.cover-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);}
+@media(max-width:820px){.cover-grid{grid-template-columns:1fr;}}
+.cover-video{
+  position:relative;aspect-ratio:16/9;background:#f0ebe3;
+  display:flex;align-items:center;justify-content:center;overflow:hidden;
+}
+.cover-video img{
+  width:100%;height:100%;object-fit:cover;display:block;
+}
+.cover-video iframe{width:100%;height:100%;border:0;display:block;}
+.cover-body{padding:24px 24px 26px;display:flex;flex-direction:column;}
+.cover-index{
+  font-family:'Press Start 2P',monospace;font-size:.56rem;
+  color:var(--coral);letter-spacing:.1em;margin-bottom:10px;
+}
+.cover-body h4{font-size:1.08rem;font-weight:800;margin-bottom:4px;color:var(--text);}
+.cover-body h4 .ko{display:block;font-size:.78rem;color:var(--dim);font-weight:400;margin-top:3px;}
+.why{
+  margin-top:16px;background:rgba(255,201,60,.1);
+  border-left:3px solid var(--sun);border-radius:0 10px 10px 0;padding:14px 16px;
+}
+.why-label{font-size:.68rem;font-weight:800;color:var(--coral);letter-spacing:.12em;display:block;margin-bottom:8px;}
+.why p{font-size:.82rem;color:rgba(45,42,38,.8);}
+.why p.ko{font-size:.76rem;color:rgba(45,42,38,.5);margin-top:7px;}
+.cover-actions{margin-top:auto;padding-top:20px;display:flex;gap:10px;flex-wrap:wrap;}
+.btn-out{
+  display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:600;
+  padding:10px 20px;border-radius:100px;border:1.5px solid var(--coral);
+  color:var(--coral);text-decoration:none;transition:all .25s;
+}
+.btn-out:hover{background:var(--coral);color:#fff;box-shadow:0 6px 18px -6px rgba(255,107,74,.5);}
+
+/* ============ 直播 ============ */
+.live-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;}
+.live-card{
+  background:var(--card);border:1px solid rgba(78,195,247,.25);
+  border-radius:var(--radius);overflow:hidden;
+  transition:transform .3s,box-shadow .3s;
+  box-shadow:0 4px 20px -10px rgba(78,195,247,.15);
+}
+.live-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px -14px rgba(78,195,247,.3);}
+.live-thumb{
+  aspect-ratio:16/9;position:relative;display:flex;
+  align-items:center;justify-content:center;font-size:2rem;overflow:hidden;
+  background-size:cover;background-position:center;
+}
+.live-thumb::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.15);}
+.live-thumb .live-badge{
+  position:absolute;top:12px;left:12px;z-index:3;
+  font-family:'Press Start 2P',monospace;font-size:.5rem;
+  background:var(--coral);color:#fff;padding:4px 10px;border-radius:6px;
+}
+.live-thumb .live-dur{
+  position:absolute;bottom:12px;right:12px;z-index:3;
+  font-size:.68rem;background:rgba(0,0,0,.65);color:#fff;
+  padding:3px 8px;border-radius:4px;
+}
+.live-body{padding:18px 20px 22px;}
+.live-body h5{font-size:.92rem;font-weight:700;margin-bottom:6px;color:var(--text);}
+.live-body h5 .ko{display:block;font-size:.76rem;color:var(--dim);font-weight:400;margin-top:3px;}
+.live-body p{font-size:.78rem;color:var(--dim);margin-bottom:14px;}
+.live-body p.ko{display:block;font-size:.74rem;color:rgba(138,130,121,.65);margin-top:4px;}
+.live-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.live-tag{
+  font-size:.66rem;padding:4px 10px;border-radius:100px;
+  background:rgba(78,195,247,.1);color:var(--sky);
+  border:1px solid rgba(78,195,247,.2);
+}
+.live-actions{display:flex;gap:10px;}
+.btn-live{
+  display:inline-flex;align-items:center;gap:6px;font-size:.74rem;font-weight:600;
+  padding:8px 16px;border-radius:100px;border:1.5px solid var(--sky);
+  color:var(--sky);text-decoration:none;transition:all .25s;
+}
+.btn-live:hover{background:var(--sky);color:#fff;box-shadow:0 6px 18px -6px rgba(78,195,247,.5);}
+
+/* ============ TMI ============ */
+.tmi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;}
+.tmi-card{perspective:1100px;height:176px;cursor:pointer;}
+.tmi-inner{
+  position:relative;width:100%;height:100%;
+  transition:transform .65s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d;
+}
+.tmi-card.flipped .tmi-inner{transform:rotateY(180deg);}
+.tmi-face{
+  position:absolute;inset:0;backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;border-radius:14px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:18px 16px;border:1px solid rgba(255,201,60,.2);
+}
+.tmi-front{background:linear-gradient(145deg,#fff9f0,#fff0e0);}
+.tmi-front::before{
+  content:'?';position:absolute;top:10px;right:16px;
+  font-family:'Press Start 2P',monospace;font-size:1.1rem;
+  color:rgba(255,107,74,.2);
+}
+.tmi-front h5{font-size:.9rem;font-weight:700;line-height:1.45;color:var(--text);}
+.tmi-front .ko{font-size:.76rem;color:var(--dim);margin-top:6px;font-weight:400;}
+.tmi-back{
+  transform:rotateY(180deg);
+  background:linear-gradient(145deg,rgba(255,201,60,.2),rgba(255,107,74,.15));
+  border-color:rgba(255,107,74,.35);
+}
+.tmi-back p{font-size:.86rem;font-weight:700;line-height:1.5;color:var(--text);}
+.tmi-back .ko{font-size:.74rem;color:rgba(45,42,38,.6);margin-top:7px;font-weight:400;}
+.tmi-hint{font-size:.68rem;color:var(--dim);text-align:center;margin-bottom:22px;}
+
+/* ============ 页脚 ============ */
+footer{
+  position:relative;z-index:1;border-top:2px solid rgba(255,201,60,.3);
+  background:var(--bg-alt);padding:52px 20px 40px;
+}
+.footer-inner{max-width:1200px;margin:0 auto;}
+.footer-title{font-size:.94rem;font-weight:800;margin-bottom:16px;color:var(--coral);}
+.footer-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-bottom:30px;}
+.footer-links a{
+  font-size:.78rem;color:var(--dim);text-decoration:none;
+  padding:10px 14px;border-radius:10px;border:1px solid rgba(45,42,38,.08);
+  transition:all .25s;display:block;background:rgba(255,255,255,.6);
+}
+.footer-links a:hover{
+  color:var(--coral);border-color:rgba(255,107,74,.3);
+  background:#fff;box-shadow:0 4px 12px -6px rgba(255,107,74,.15);
+}
+.footer-note{
+  font-size:.72rem;color:rgba(45,42,38,.4);line-height:1.9;
+  border-top:1px solid rgba(45,42,38,.08);padding-top:22px;
+}
+
+/* ============ 动画 ============ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+/* ============ 响应式 ============ */
+@media(max-width:768px){
+  section{padding:64px 16px;}
+  .about-block{grid-template-columns:1fr;gap:8px;}
+  .about-num{padding-top:0;}
+  .sun-deco{width:80px;height:80px;right:4%;top:10%;opacity:.35;}
+  .cam-thumb{width:80px;height:50px;}
+  .cam-info h5{font-size:.8rem;}
+  .cam-go{display:none;}
+  .tmi-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .tmi-card{height:160px;}
+  .tmi-front h5{font-size:.8rem;}
+  .tmi-back p{font-size:.78rem;}
+  .live-grid{grid-template-columns:1fr;}
+  .hero-photo{width:160px;height:160px;}
+}
+@media(max-width:420px){
+  .tmi-grid{grid-template-columns:1fr;}
+  .tmi-card{height:154px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">HAUM ☀ 하음</div>
+    <ul class="nav-links">
+      <li><a href="#guide"><span>入坑指南</span><span class="ko">입덕 가이드</span></a></li>
+      <li><a href="#about"><span>认识Haum</span><span class="ko">하음 알아가기</span></a></li>
+      <li><a href="#concept"><span>概念照</span><span class="ko">컨셉 포토</span></a></li>
+      <li><a href="#fancam"><span>直拍</span><span class="ko">직캠</span></a></li>
+      <li><a href="#cover"><span>Cover舞台</span><span class="ko">커버 무대</span></a></li>
+      <li><a href="#live"><span>Haum直播</span><span class="ko">하음 라이브</span></a></li>
+      <li><a href="#tmi"><span>Haum的TMI</span><span class="ko">하음의 TMI</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-glow g1"></div>
+  <div class="hero-glow g2"></div>
+  <div class="hero-glow g3"></div>
+  <div class="sun-deco"></div>
+
+  <div class="hero-content">
+    <div class="hero-photo">
+      <img src="./haum.jpg" alt="HAUM 郭河音">
+      <div class="hero-photo-glow"></div>
+    </div>
+    <span class="hero-tag">KiiiKiii · 키키 · 2025.02.24 DEBUT</span>
+    <h1 class="hero-name">
+      <span class="accent">HAUM</span><br>郭河音
+    </h1>
+    <p class="hero-ko">곽하음 · KWAK HAEUM</p>
+    <p class="hero-desc">
+      猫系颜、芭蕾底子的舞台精灵，Y2K美学的最佳代言人。<br>
+      고양이상, 발레 출신 무대 요정, Y2K 미학의 최고 대표 주자.
+    </p>
+    <div class="hero-meta">
+      <span class="hero-chip">生日 <b>2006.11.14</b></span>
+      <span class="hero-chip">定位 <b>Vocal · Dance · Rap · Visual</b></span>
+      <span class="hero-chip">代表色 <b>绿色</b></span>
+      <span class="hero-chip">MBTI <b>ESTJ</b></span>
+    </div>
+  </div>
+  <div class="wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,40 1440,35 L1440,60 L0,60 Z" fill="#fffaf3"/>
+    </svg>
+  </div>
+</header>
+
+<section id="guide">
+  <div class="sec-head reveal">
+    <span class="sec-num">01 / GUIDE</span>
+    <h2 class="sec-title">入坑<span class="hl">指南</span></h2>
+    <p class="sec-sub">입덕 가이드 — 5分钟认识 Haum</p>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="quick-grid reveal">
+    <div class="quick-card">
+      <span class="quick-icon">🐱</span>
+      <h4>猫系颜 + 芭蕾底子的舞台精灵</h4>
+      <span class="ko">고양이상 + 발레 출신 무대 요정</span>
+    </div>
+    <div class="quick-card">
+      <span class="quick-icon">😳</span>
+      <h4>ESTJ 但没人相信的害羞鬼</h4>
+      <span class="ko">ESTJ인데 아무도 안 믿는 수줍은 아이</span>
+    </div>
+    <div class="quick-card">
+      <span class="quick-icon">🎙️</span>
+      <h4>音色自带沙哑颗粒感的 Vocalist</h4>
+      <span class="ko">허스키한 음색의 보컬리스트</span>
+    </div>
+    <div class="quick-card">
+      <span class="quick-icon">💿</span>
+      <h4>Y2K 美学的最佳代言人</h4>
+      <span class="ko">Y2K 미학의 최고 대표 주자</span>
+    </div>
+  </div>
+
+  <h3 class="top5-title reveal">新粉必看 TOP 5 <span class="ko" style="font-size:.78rem;color:var(--dim);font-weight:400;">신규 팬 필수 시청 TOP 5</span></h3>
+  <div class="top5-list reveal">
+    <div class="top5-item">
+      <span class="top5-rank">01</span>
+      <div class="top5-body">
+        <h5>〈I DO ME〉出道舞台直拍</h5>
+        <p>第一眼就会被她的猫眼和舞蹈线条抓住。</p>
+        <span class="ko">첫눈에 그녀의 고양이 눈매와 춤선에 빠져들 거예요.</span>
+      </div>
+    </div>
+    <div class="top5-item">
+      <span class="top5-rank">02</span>
+      <div class="top5-body">
+        <h5>〈404 (New Era)〉直拍</h5>
+        <p>最适合 Y2K 风格的人，没有之一。</p>
+        <span class="ko">Y2K 스타일에 가장 어울리는 사람, 그 누구보다도.</span>
+      </div>
+    </div>
+    <div class="top5-item">
+      <span class="top5-rank">03</span>
+      <div class="top5-body">
+        <h5>2NE1〈我最红〉Cover 舞台</h5>
+        <p>主舞的实力证明。</p>
+        <span class="ko">메인댄서의 실력 증명.</span>
+      </div>
+    </div>
+    <div class="top5-item">
+      <span class="top5-rank">04</span>
+      <div class="top5-body">
+        <h5>f(x)〈4walls〉Cover 舞台</h5>
+        <p>空灵音色 + 纤细肢体，观赏性极佳。</p>
+        <span class="ko">몽환적인 음색 + 가느다란 몸짓, 보는 맛이 뛰어나요.</span>
+      </div>
+    </div>
+    <div class="top5-item">
+      <span class="top5-rank">05</span>
+      <div class="top5-body">
+        <h5>练习生时期〈nasty〉视频</h5>
+        <p>入坑前就应该看到的东西。</p>
+        <span class="ko">입덕 전에 꼭 봐야 할 영상.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="sec-head reveal">
+    <span class="sec-num">02 / ABOUT</span>
+    <h2 class="sec-title">认识 <span class="hl">Haum</span></h2>
+    <p class="sec-sub">하음 알아가기 — 从芭蕾少女到舞台中心</p>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="about-block reveal">
+    <span class="about-num">01</span>
+    <div class="about-body">
+      <h3>从芭蕾到 K-POP<span class="ko">발레에서 K-POP까지</span></h3>
+      <p>Haum 本名郭河音（곽하음），2006年11月14日出生于首尔东大门区踏十里洞，毕业于里拉艺术高中演技系。她从小学习芭蕾和 K-POP 舞蹈，在跳了 IVE 的〈LOVE DIVE〉之后对 K-POP 产生了浓厚兴趣，由此萌生了成为偶像的梦想。</p>
+      <p class="ko">하음은 2006년 11월 14일 서울 동대문구 답십리동에서 태어났으며, 리라아트고등학교 연기과를 졸업했습니다. 어릴 때부터 발레와 K-POP 댄스를 배웠고, IVE의 〈LOVE DIVE〉를 추면서 K-POP에 흥미를 느껴 아이돌의 꿈을 키웠습니다.</p>
+      <p>在进入 Starship Entertainment 后，她经历了约 2 年的练习生生活，于 2025 年 2 月 24 日随 KiiiKiii 发行首张迷你专辑《UNCUT GEM》正式出道。</p>
+      <p class="ko">스타쉽엔터테인먼트에 입사한 후 약 2년의 연습생 생활을 거쳐, 2025년 2월 24일 KiiiKiii의 첫 미니앨범 《UNCUT GEM》으로 정식 데뷔했습니다.</p>
+    </div>
+  </div>
+
+  <div class="about-block reveal">
+    <span class="about-num">02</span>
+    <div class="about-body">
+      <h3>"高级猫" 的视觉魅力<span class="ko">‘고급 고양이’의 비주얼</span></h3>
+      <p>Haum 的外貌关键词是"猫颜"——锐利的眼型、圆润的脸颊和独特的嘴唇线条，让她在韩网被称为"高级猫"。她被认为神似 STAYC 的 ISA，也被说像模特 Devon Aoki。主打曲〈I DO ME〉的封面中出现后，她迅速成为话题中心。</p>
+      <p class="ko">하음의 외모 키워드는 '고양이상'입니다. 날카로운 눈매, 둥근 볼, 독특한 입술 라인으로 한국 커뮤니티에서 '고급 고양이'라고 불립니다. STAYC의 ISA, 모델 데본 아오키를 닮았다는 이야기도 있습니다. 타이틀곡 〈I DO ME〉 커버에 등장한 후 빠르게 화제의 중심이 되었습니다.</p>
+    </div>
+  </div>
+
+  <div class="about-block reveal">
+    <span class="about-num">03</span>
+    <div class="about-body">
+      <h3>舞台上的 Haum<span class="ko">무대 위의 하음</span></h3>
+      <p>作为队内 Vocal、Dance、Rap、Visual 全担当，Haum 的舞蹈风格被评价为"表情最投入、最有表现力"。她的身体线条纤细但动作利落，尤其擅长用面部表情完成舞台叙事。从〈I DO ME〉到〈404 (New Era)〉，她的直拍一直是粉丝反复观看的对象。</p>
+      <p class="ko">팀 내 보컬, 댄스, 랩, 비주얼을 모두 담당하고 있는 하음은 '표정 몰입도가 가장 높고 표현력이 뛰어나다'는 평가를 받습니다. 가느다란 몸매지만 동작은 깔끔하고, 특히 표정으로 무대 서사를 완성하는 데 능합니다.</p>
+    </div>
+  </div>
+
+  <div class="about-block reveal">
+    <span class="about-num">04</span>
+    <div class="about-body">
+      <h3>性格反差<span class="ko">성격 반전</span></h3>
+      <p>Haum 自认非常认生且容易害羞，尴尬时会像机器人一样"故障"，然后开始笑。她喜欢睡觉，成员们说"客厅里找不到她的时候，她一定在房间睡觉"。她喜欢巧克力牛奶、烤肉和寿司，最近迷上了有香味的东西，比如护手霜。每次去日本都会买蜜瓜包。</p>
+      <p class="ko">하음은 스스로 낯가림이 심하고 부끄러움이 많다고 말합니다. 어색할 때는 로봇처럼 '고장 난' 척하다가 웃음을 터뜨립니다. 자는 것을 좋아해서 멤버들은 "거실에 없으면 방에서 자고 있는 것"이라고 말합니다. 초코 우유, 고기, 초밥을 좋아하고 최근에는 향기 나는 것(핸드크림 등)에 빠졌습니다. 일본에 갈 때마다 멜론빵을 사요.</p>
+    </div>
+  </div>
+
+  <div class="about-block reveal">
+    <span class="about-num">05</span>
+    <div class="about-body">
+      <h3>代表色与符号<span class="ko">대표 색과 심볼</span></h3>
+      <p>Haum 的官方 emoji 是牛（🐮），代表色是绿色。她的个人昵称包括 "Hip Girl"、"Haume"、"Kenyangi"（猫咪）等。</p>
+      <p class="ko">하음의 공식 이모지는 소(🐮), 대표 색은 초록색입니다. 개인 별명으로는 'Hip Girl', '하음이', '케냥이'(고양이) 등이 있습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section id="concept">
+  <div class="sec-head reveal">
+    <span class="sec-num">03 / CONCEPT</span>
+    <h2 class="sec-title">概念<span class="hl">照</span></h2>
+    <p class="sec-sub">컨셉 포토 — 回归 / 杂志 / 代言 / 品牌合作</p>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="concept-tabs reveal" id="conceptTabs">
+    <button class="concept-tab active" data-cat="album"><span>回归专辑</span><span class="ko">컴백 앨범</span></button>
+    <button class="concept-tab" data-cat="magazine"><span>杂志画报</span><span class="ko">잡지 화보</span></button>
+    <button class="concept-tab" data-cat="ad"><span>代言</span><span class="ko">광고</span></button>
+    <button class="concept-tab" data-cat="brand"><span>品牌合作</span><span class="ko">브랜드 협업</span></button>
+  </div>
+
+  <div class="concept-viewer reveal">
+    <div class="concept-selector" id="conceptSelector"></div>
+    <div class="concept-cover" id="conceptCover"></div>
+    <div class="concept-info">
+      <div class="concept-desc" id="conceptDesc"></div>
+      <a class="btn-weibo" id="conceptWeibo" href="#" target="_blank" rel="noopener">
+        <span>📷 去微博看更多</span>
+        <span class="ko">웨이보에서 더 보기</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="fancam">
+  <div class="sec-head reveal">
+    <span class="sec-num">04 / FANCAM</span>
+    <h2 class="sec-title">直<span class="hl">拍</span></h2>
+    <p class="sec-sub">직캠 — 官方直拍 · 粉丝直拍 · 按曲目分类</p>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="fancam-tabs reveal">
+    <button class="fancam-tab active" data-tab="official">官方直拍 / 공식 직캠</button>
+    <button class="fancam-tab" data-tab="fan">粉丝直拍 / 팬 직캠</button>
+  </div>
+
+  <div class="fancam-panel reveal" id="panel-official"></div>
+  <div class="fancam-panel reveal" id="panel-fan" style="display:none;"></div>
+</section>
+
+<section id="cover">
+  <div class="sec-head reveal">
+    <span class="sec-num">05 / COVER</span>
+    <h2 class="sec-title">Cover <span class="hl">舞台</span></h2>
+    <p class="sec-sub">커버 무대 — 为什么这个舞台值得看</p>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="cover-list">
+    <div class="cover-card reveal">
+      <div class="cover-grid">
+        <div class="cover-video">
+          <a href="https://www.bilibili.com/video/BV13iEgz5EFU/" target="_blank" rel="noopener">
+            <img src="https://i1.hdslb.com/bfs/archive/84a5cf54537525d8f136e86781ae4bd904f8863c.jpg@320w_180h.jpg" alt="2NE1 我最红" referrerpolicy="no-referrer" loading="lazy">
+          </a>
+        </div>
+        <div class="cover-body">
+          <span class="cover-index">COVER 01</span>
+          <h4>2NE1〈我最红〉<span class="ko">2NE1 〈내가 제일 잘 나가〉</span></h4>
+          <div class="why">
+            <span class="why-label">WHY WORTH WATCHING / 왜 봐야 할까</span>
+            <p>Haum 用主舞的身体重新诠释了 2NE1 的经典，表情管理和力量控制都在这个舞台上达到了新的高度。如果你只打算看一个 Cover，就看这个。</p>
+            <p class="ko">하음이 메인댄서의 몸으로 2NE1의 클래식을 재해석했습니다. 표정 관리와 힘 조절이 이 무대에서 새로운 경지에 도달했어요. 커버를 하나만 본다면, 이걸 보세요.</p>
+          </div>
+          <div class="cover-actions"><a class="btn-out" href="https://www.bilibili.com/video/BV13iEgz5EFU/" target="_blank" rel="noopener">▶ 去B站看 / B站에서 보기</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-card reveal">
+      <div class="cover-grid">
+        <div class="cover-video">
+          <a href="https://www.bilibili.com/video/BV1gQEzzdEuX/" target="_blank" rel="noopener">
+            <img src="https://i1.hdslb.com/bfs/archive/ad3f3b85bbff495e00942381ffbb3d7446a34df6.jpg@320w_180h.jpg" alt="2NE1 I Don't Care" referrerpolicy="no-referrer" loading="lazy">
+          </a>
+        </div>
+        <div class="cover-body">
+          <span class="cover-index">COVER 02</span>
+          <h4>2NE1〈I Don't Care〉<span class="ko">2NE1 〈I Don't Care〉</span></h4>
+          <div class="why">
+            <span class="why-label">WHY WORTH WATCHING / 왜 봐야 할까</span>
+            <p>同一个团体的两首经典，Haum 展现了完全不同的情绪。〈I Don't Care〉里她的音色优势更加突出，沙哑质感的嗓音和原曲产生了奇妙的化学反应。</p>
+            <p class="ko">같은 그룹의 두 클래식, 하음은 완전히 다른 감정을 보여줍니다. 〈I Don't Care〉에서는 그녀의 음색 장점이 더욱 돋보여요.</p>
+          </div>
+          <div class="cover-actions"><a class="btn-out" href="https://www.bilibili.com/video/BV1gQEzzdEuX/" target="_blank" rel="noopener">▶ 去B站看 / B站에서 보기</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-card reveal">
+      <div class="cover-grid">
+        <div class="cover-video">
+          <a href="https://www.bilibili.com/video/BV1YdLw6qEQd/" target="_blank" rel="noopener">
+            <img src="https://i0.hdslb.com/bfs/archive/b9000e7087d30965557d3ce925b4838f1be72e07.jpg@320w_180h.jpg" alt="f(x) 4walls" referrerpolicy="no-referrer" loading="lazy">
+          </a>
+        </div>
+        <div class="cover-body">
+          <span class="cover-index">COVER 03</span>
+          <h4>f(x)〈4walls〉<span class="ko">f(x) 〈4 Walls〉</span></h4>
+          <div class="why">
+            <span class="why-label">WHY WORTH WATCHING / 왜 봐야 할까</span>
+            <p>空灵的音色 + 纤细的四肢线条，这个直拍的观赏性极高。4walls 的编舞本身就非常有层次感，Haum 的身体语言让整个舞台变得更加轻盈。</p>
+            <p class="ko">몽환적인 음색 + 가느다란 팔다리 라인, 이 직캠의 관람성이 매우 뛰어납니다. 4 Walls의 안무 자체가 레이어드되어 있는데, 하음의 신체 언어가 무대를 더 가볍게 만듭니다.</p>
+          </div>
+          <div class="cover-actions"><a class="btn-out" href="https://www.bilibili.com/video/BV1YdLw6qEQd/" target="_blank" rel="noopener">▶ 去B站看 / B站에서 보기</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-card reveal">
+      <div class="cover-grid">
+        <div class="cover-video">
+          <a href="https://www.bilibili.com/video/BV1eK8VzDEaU/" target="_blank" rel="noopener">
+            <img src="https://i1.hdslb.com/bfs/archive/8ccecf3180ee57d3facb6cd78866159c5b34449a.jpg@320w_180h.jpg" alt="合作舞台 + Dancing Alone" referrerpolicy="no-referrer" loading="lazy">
+          </a>
+        </div>
+        <div class="cover-body">
+          <span class="cover-index">COVER 04</span>
+          <h4>合作舞台 +〈Dancing Alone〉<span class="ko">협업 무대 + 〈Dancing Alone〉</span></h4>
+          <div class="why">
+            <span class="why-label">WHY WORTH WATCHING / 왜 봐야 할까</span>
+            <p>250727 SBS 歌谣大战的合作舞台，Haum 处理双人编舞时的控制力值得关注。</p>
+            <p class="ko">250727 SBS 가요대전 협업 무대, 하음이 듀엣 안무를 소화하는 컨트롤력에 주목하세요.</p>
+          </div>
+          <div class="cover-actions"><a class="btn-out" href="https://www.bilibili.com/video/BV1eK8VzDEaU/" target="_blank" rel="noopener">▶ 去B站看 / B站에서 보기</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-card reveal">
+      <div class="cover-grid">
+        <div class="cover-video">
+          <a href="https://www.bilibili.com/video/BV1Fuw2zDE9D/" target="_blank" rel="noopener">
+            <img src="https://i1.hdslb.com/bfs/archive/e0571a0721643ae1ce69b9f3a7b541f12ec75967.jpg@320w_180h.jpg" alt="练习生时期 nasty" referrerpolicy="no-referrer" loading="lazy">
+          </a>
+        </div>
+        <div class="cover-body">
+          <span class="cover-index">COVER 05</span>
+          <h4>练习生时期〈nasty〉<span class="ko">연습생 시절 〈nasty〉</span></h4>
+          <div class="why">
+            <span class="why-label">WHY WORTH WATCHING / 왜 봐야 할까</span>
+            <p>入坑前的珍贵影像。甩头的动作干净利落，能看出芭蕾底子带来的影响。</p>
+            <p class="ko">입덕 전의 소중한 영상. 헤드 스냅 동작이 깔끔하고, 발레 기초의 영향을 엿볼 수 있어요.</p>
+          </div>
+          <div class="cover-actions"><a class="btn-out" href="https://www.bilibili.com/video/BV1Fuw2zDE9D/" target="_blank" rel="noopener">▶ 去B站看 / B站에서 보기</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="live">
+  <div class="sec-head reveal">
+    <span class="sec-num">06 / LIVE</span>
+    <h2 class="sec-title">Haum <span class="hl">直播</span></h2>
+    <p class="sec-sub">하음 라이브 — 直播精彩片段 · 中字精选</p>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="live-grid reveal" id="liveGrid"></div>
+</section>
+
+<section id="tmi">
+  <div class="sec-head reveal">
+    <span class="sec-num">07 / TMI</span>
+    <h2 class="sec-title">Haum 的 <span class="hl">TMI</span></h2>
+    <p class="sec-sub">하음의 TMI — 点击卡片翻面</p>
+    <div class="sec-line"></div>
+  </div>
+
+  <p class="tmi-hint reveal">👆 点击任意卡片翻转 / 카드를 클릭하면 뒤집힙니다</p>
+  <div class="tmi-grid reveal" id="tmiGrid"></div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <h4 class="footer-title">关联站子 / 관련 팬사이트</h4>
+    <div class="footer-links">
+      <a href="http://t.cn/A6m9K7IC" target="_blank" rel="noopener">🏠 Haum 大吧</a>
+      <a href="http://t.cn/A61SfHlo" target="_blank" rel="noopener">📊 书局站</a>
+      <a href="http://t.cn/A6BD0Wjr" target="_blank" rel="noopener">🛡️ 反黑站</a>
+      <a href="http://t.cn/A617R9ZT" target="_blank" rel="noopener">💬 Haum 主超话</a>
+      <a href="http://t.cn/A61Gt1ix" target="_blank" rel="noopener">🤝 交友</a>
+      <a href="http://t.cn/A619zGqz" target="_blank" rel="noopener">📦 个人周边中转</a>
+    </div>
+    <h4 class="footer-title" style="margin-top:24px;">素材来源与致谢 / 자료 출처</h4>
+    <div class="footer-links">
+      <a href="https://www.bilibili.com" target="_blank" rel="noopener">📺 B站 Haum 直拍合集</a>
+      <a href="https://www.bilibili.com" target="_blank" rel="noopener">📺 B站 直播中字片段</a>
+      <a href="https://m.weibo.cn" target="_blank" rel="noopener">📷 微博 @Haum_ForestLeon</a>
+      <a href="https://www.vogue.co.kr" target="_blank" rel="noopener">📷 Vogue Korea × Rockfish 画报</a>
+      <a href="https://www.marieclairekorea.com" target="_blank" rel="noopener">📷 Marie Claire Korea 画报</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">💄 RR BEAUTY 代言</a>
+      <a href="https://baike.baidu.com" target="_blank" rel="noopener">📰 KiiiKiii 百科资料</a>
+    </div>
+    <p class="footer-note">
+      本站为粉丝自制的非营利安利网站，仅供交流学习使用。所有图片、视频、文字素材版权归原作者及所属公司所有。<br>
+      본 사이트는 팬이 제작한 비영리 입덕 사이트입니다. 모든 이미지, 영상, 텍스트의 저작권은 원작자 및 소속사에 있습니다.<br>
+      © 2026 HAUM Fan Guide · Made with ☀️💚
+    </p>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   概念照数据 — 封面图 + 微博外链
+   ============================================================ */
+const conceptData = {
+  album: [
+    {
+      title:'《WhyKiiiKiii》',
+      titleKo:'WhyKiiiKiii',
+      desc:'2026.08.10 夏日迷你专辑。以美国檀香山度假区 Waikiki 为灵感，曲目按一天24小时时间线排列，视觉复刻复古美妆手机广告、怀旧杂志等经典复古意象。',
+      descKo:'2026.08.10 여름 미니앨범. 하와이 와이키키에서 영감을 받아 하루 24시간 타임라인으로 구성. 빈티지 뷰티 폰 광고, 빈티지 잡지 이미지를 재현했습니다.',
+      color:'linear-gradient(135deg,#ff6b4a 0%,#ffc93c 50%,#4ec3f7 100%)',
+      cover:'./images/why.jpg',
+      weibo:'https://weibo.com/5896900193/5322788832555067'
+    },
+    {
+      title:'《Delulu Pack》',
+      titleKo:'Delulu Pack',
+      desc:'2026.01.26 第二张迷你专辑。主打曲〈404 (New Era)〉，收录〈Delulu〉〈UNDERDOGS〉〈멍냥〉〈Dizzy〉等6首歌曲。',
+      descKo:'2026.01.26 두 번째 미니앨범. 타이틀곡 〈404 (New Era)〉, 〈Delulu〉〈UNDERDOGS〉〈멍냥〉〈Dizzy〉 등 6곡 수록.',
+      color:'linear-gradient(135deg,#a855f7 0%,#4ec3f7 60%,#ffc93c 100%)',
+      cover:'./images/delulu.jpg',
+      weibo:'https://weibo.com/5896900193/5249696350077271'
+    },
+    {
+      title:'《UNCUT GEM》',
+      titleKo:'UNCUT GEM',
+      desc:'2025.02.24 出道迷你专辑。主打曲〈I DO ME〉封面中出现后，Haum 迅速成为话题中心。',
+      descKo:'2025.02.24 데뷔 미니앨범. 타이틀곡 〈I DO ME〉 커버에 등장한 후 하음은 빠르게 화제의 중심이 되었습니다.',
+      color:'linear-gradient(135deg,#3ddc97 0%,#ffc93c 50%,#ff6b4a 100%)',
+      cover:'./images/uncut.jpg',
+      weibo:'https://weibo.com/5896900193/5149600542887591'
+    },
+    {
+      title:'《Dancing Alone》',
+      titleKo:'Dancing Alone',
+      desc:'数字单曲专辑〈Dancing Alone〉概念照。Haum 以独特气质演绎这首歌曲的复古氛围，展现与主打曲不同的感性面貌。',
+      descKo:'디지털 싱글 앨범 〈Dancing Alone〉 컨셉 포토. 하음이 독특한 분위기로 이 곡의 레트로 감성을 표현했습니다.',
+      color:'linear-gradient(135deg,#a855f7 0%,#ff6b4a 50%,#ffc93c 100%)',
+      cover:'./images/dancing.jpg',
+      weibo:'https://weibo.com/5896900193/5194631943816595'
+    },
+    {
+      title:'2026 Season Greetings',
+      titleKo:'2026 시즌 그리팅',
+      desc:'"POP INTO COMIC"主题，复古漫画风格。Haum 以 kitsch 感十足的造型展现与平时不同的魅力。',
+      descKo:'"POP INTO COMIC" 테마, 빈티지 만화 스타일. 하음은 키치한 의상으로 평소와 다른 매력을 선보였습니다.',
+      color:'linear-gradient(135deg,#ff9a76 0%,#a855f7 50%,#4ec3f7 100%)',
+      cover:'./images/sg.jpg',
+      weibo:'https://weibo.com/7950995554/QeoU3neIY'
+    }
+  ],
+
+  magazine: [
+    {
+      title:'Singles Magazine 2026年3月号',
+      titleKo:'싱글즈 매거진 2026년 3월호',
+      desc:'出道后首个实体杂志封面，"BLOOM"概念。Haum 与成员们共同登上封面，展现春日少女的清新魅力。',
+      descKo:'데뷔 후 첫 실물 잡지 커버, "BLOOM" 컨셉. 하음이 멤버들과 함께 커버를 장식하며 봄 소녀의 청량한 매력을 선보였습니다.',
+      color:'linear-gradient(135deg,#ff6b4a 0%,#ffc93c 60%,#3ddc97 100%)',
+      cover:'./images/singles.jpg',
+      weibo:'https://weibo.com/7950995554/QsPPWFBxW'
+    },
+    {
+      title:'Vogue Korea × Rockfish',
+      titleKo:'보그 코리아 × 락피시',
+      desc:'2026年10月号。以"Rockfish Node" 26FW系列为拍摄对象，在霓虹灯闪烁的城市夜景中展现青春的自由与能量。',
+      descKo:'2026년 10월호. "Rockfish Node" 26FW 시리즈를 착용하고 네온이 빛나는 도시 야경 속에서 청춘의 자유와 에너지를 표현했습니다.',
+      color:'linear-gradient(135deg,#ff6b4a 0%,#a855f7 60%,#4ec3f7 100%)',
+      cover:'./images/vogue.jpg',
+      weibo:'https://weibo.com/7950995554/RjyqQazBL'
+    },
+    {
+      title:'Marie Claire Korea 4月号',
+      titleKo:'마리끌레르 코리아 4월호',
+      desc:'猫咪主题画报。以"날것의 감각으로, 가벼운 발걸음으로 세상을 유영하는 키키 하음의 시선"为概念。',
+      descKo:'고양이 테마 화보. "날것의 감각으로, 가벼운 발걸음으로 세상을 유영하는 키키 하음의 시선"을 컨셉으로 진행되었습니다.',
+      color:'linear-gradient(135deg,#ff9a76 0%,#ffc93c 50%,#4ec3f7 100%)',
+      cover:'./images/mc4.jpg',
+      weibo:'https://weibo.com/7950995554/Qxy051kLW'
+    },
+    {
+      title:'Esquire Korea × LMC',
+      titleKo:'에스콰이어 코리아 × LMC',
+      desc:'2025年11月号。与 Sue 共同出镜，穿着 LMC 2025冬季系列。Haum 以豹纹运动套装展现嘻哈魅力。',
+      descKo:'2025년 11월호. 수이와 함께 출연, LMC 2025 겨울 컬렉션 착용. 하음은 레오파드 트레이닝 셋업으로 힙한 매력을 강조했습니다.',
+      color:'linear-gradient(135deg,#2d2a26 0%,#ff6b4a 50%,#ffc93c 100%)',
+      cover:'./images/esquire.jpg',
+      weibo:'https://weibo.com/7950995554/Qa1xiwpj6'
+    },
+    {
+      title:'NYLON JAPAN 2026年9月号',
+      titleKo:'나일론 재팬 2026년 9월호',
+      desc:'KiiiKiii 全员登上 W 封面，Haum 以日系少女风格出镜，展现不同于韩系妆造的清新感。',
+      descKo:'KiiiKiii 전원이 W 커버를 장식, 하음은 일본 소녀 스타일로 출연해 한국식 메이크업과 다른 청량함을 선보였습니다.',
+      color:'linear-gradient(135deg,#3ddc97 0%,#4ec3f7 50%,#a855f7 100%)',
+      cover:'./images/nylon.jpg',
+      weibo:'https://weibo.com/8002919830/RaMKWrOFj'
+    },
+    {
+      title:'W Korea × Longchamp 2025秋冬系列',
+      titleKo:'W Korea × 롱샴 2025 FW',
+      desc:'W Korea 与 Longchamp 合作的2025秋冬系列画报。Haum 以优雅造型演绎品牌经典包款。',
+      descKo:'W Korea와 롱샴이 협업한 2025 FW 컬렉션 화보. 하음이 우아한 스타일로 브랜드 클래식 백을 선보였습니다.',
+      color:'linear-gradient(135deg,#3ddc97 0%,#4ec3f7 50%,#ffc93c 100%)',
+      cover:'./images/wkorea.jpg',
+      weibo:'https://weibo.com/7950995554/PDakicGZm'
+    },
+    {
+      title:'Marie Claire 5月刊',
+      titleKo:'마리끌레르 5월호',
+      desc:'Marie Claire Korea 5月刊画报。Haum 以清新夏日造型出镜。',
+      descKo:'마리끌레르 코리아 5월호 화보. 하음이 청량한 여름 스타일로 출연했습니다.',
+      color:'linear-gradient(135deg,#ff9a76 0%,#3ddc97 50%,#4ec3f7 100%)',
+      cover:'./images/mc5.jpg',
+      weibo:'https://weibo.com/7950995554/Ppy1vdGgc'
+    },
+    {
+      title:'Dior Addict for SPUR Magazine',
+      titleKo:'디올 어딕트 for SPUR 매거진',
+      desc:'Dior Addict 与 SPUR Magazine 合作画报。Haum 以 Dior 美妆造型出镜，展现成熟优雅魅力。',
+      descKo:'디올 어딕트와 SPUR 매거진 협업 화보. 하음이 디올 뷰티 스타일로 성숙하고 우아한 매력을 선보였습니다.',
+      color:'linear-gradient(135deg,#a855f7 0%,#ff6b4a 50%,#ffc93c 100%)',
+      cover:'./images/dior.jpg',
+      weibo:'https://weibo.com/7950995554/QlPsu4RjZ'
+    },
+    {
+      title:'NYLON JAPAN 2026年3月号',
+      titleKo:'나일론 재팬 2026년 3월호',
+      desc:'NYLON JAPAN 2026年3月号杂志画报。Haum 以独特魅力登上杂志。',
+      descKo:'나일론 재팬 2026년 3월호 잡지 화보. 하음이 독특한 매력으로 잡지에 등장했습니다.',
+      color:'linear-gradient(135deg,#3ddc97 0%,#ffc93c 50%,#ff9a76 100%)',
+      cover:'./images/nylon3.jpg',
+      weibo:'https://weibo.com/7950995554/QoKDcFhIZ'
+    },
+    {
+      title:'KiiiKiii × FILA × DAZED KOREA 6月号数字封面',
+      titleKo:'KiiiKiii × FILA × DAZED KOREA 6월호 디지털 커버',
+      desc:'KiiiKiii 与 FILA、DAZED KOREA 合作的6月号数字封面。全员以 FILA 造型出镜，Haum 展现了独特的时尚消化力。',
+      descKo:'KiiiKiii가 FILA, DAZED KOREA와 협업한 6월호 디지털 커버. 하음이 FILA 스타일링으로 독특한 패션 소화력을 보여주었습니다.',
+      color:'linear-gradient(135deg,#ff6b4a 0%,#4ec3f7 50%,#3ddc97 100%)',
+      cover:'./images/fila.jpg',
+      weibo:'https://weibo.com/7950995554/PsGPUj4nZ'
+    },
+    {
+      title:'10 Magazine USA 封面 2025 春夏 × MiuMiu',
+      titleKo:'10 매거진 USA 커버 2025 SS × MiuMiu',
+      desc:'10 Magazine USA 2025春夏封面，与 MiuMiu 合作。Haum 以 MiuMiu 造型展现青春俏皮的一面。',
+      descKo:'10 매거진 USA 2025 SS 커버, MiuMiu와 협업. 하음이 MiuMiu 스타일로 발랄한 매력을 선보였습니다.',
+      color:'linear-gradient(135deg,#a855f7 0%,#ff9a76 50%,#ffc93c 100%)',
+      cover:'./images/10mag.jpg',
+      weibo:'https://weibo.com/7950995554/Pjqvprkwo'
+    },
+    {
+      title:'Ize Magazine eyesmag × GANNI',
+      titleKo:'Ize 매거진 eyesmag × GANNI',
+      desc:'Ize Magazine 与 GANNI 合作画报。Haum 以 GANNI 造型出镜，展现北欧风格的清新时尚感。',
+      descKo:'Ize 매거진과 GANNI 협업 화보. 하음이 GANNI 스타일로 북유럽 감성의 청량한 패션을 보여주었습니다.',
+      color:'linear-gradient(135deg,#ff6b4a 0%,#3ddc97 50%,#4ec3f7 100%)',
+      cover:'./images/ize.jpg',
+      weibo:'https://weibo.com/7950995554/PtuTkofIE'
+    },
+    {
+      title:'韩版Allure电子刊 × DELVAUX',
+      titleKo:'한국판 Allure 디지털 에디션 × DELVAUX',
+      desc:'韩版 Allure 电子刊与 DELVAUX 合作画报。Haum 以优雅造型演绎 DELVAUX 品牌包款。',
+      descKo:'한국판 Allure 디지털 에디션과 DELVAUX 협업 화보. 하음이 우아한 스타일로 DELVAUX 백을 선보였습니다.',
+      color:'linear-gradient(135deg,#ff9a76 0%,#a855f7 50%,#4ec3f7 100%)',
+      cover:'./images/allure.jpg',
+      weibo:'https://weibo.com/7950995554/Pw331yJkK'
+    },
+    {
+      title:'Style Korea 七月刊 ASEA 2025 特别版',
+      titleKo:'스타일 코리아 7월호 ASEA 2025 특별판',
+      desc:'Style Korea 七月刊 ASEA 2025 特别版画报。Haum 以特别造型登上杂志。',
+      descKo:'스타일 코리아 7월호 ASEA 2025 특별판 화보. 하음이 특별한 스타일로 잡지에 등장했습니다.',
+      color:'linear-gradient(135deg,#3ddc97 0%,#ffc93c 50%,#a855f7 100%)',
+      cover:'./images/style.jpg',
+      weibo:'https://weibo.com/7950995554/PxqAtqi9a'
+    }
+  ],
+
+  ad: [
+    {
+      title:'Rest & Recreation Beauty (RR BEAUTY)',
+      titleKo:'레스트앤레크레이션 뷰티',
+      desc:'RR BEAUTY 品牌首位缪斯，2026年9月3日官宣。Haum 以梦幻而精致的氛围演绎品牌季度信息。',
+      descKo:'RR BEAUTY 브랜드 최초의 뮤즈, 2026년 9월 3일 공개. 하음은 몽환적이고 정교한 분위기로 브랜드 시즌 메시지를 표현했습니다.',
+      color:'linear-gradient(135deg,#ff6b4a 0%,#ff9a76 50%,#ffc93c 100%)',
+      cover:'./images/rr.jpg',
+      weibo:'https://weibo.com/8229957973/RhbcolOIp'
+    }
+  ],
+
+  brand: [
+    {
+      title:'LOUIS VUITTON',
+      titleKo:'루이비통',
+      desc:'Haum 与 LOUIS VUITTON 的多次合作。2025年8月25日、9月11日、11月13日分别释出不同系列的画报与活动造型。',
+      descKo:'하음과 루이비통의 다수 협업. 2025년 8월 25일, 9월 11일, 11월 13일에 각각 다른 시리즈의 화보와 활동 스타일을 공개했습니다.',
+      color:'linear-gradient(135deg,#2d2a26 0%,#ffc93c 50%,#ff6b4a 100%)',
+      cover:'./images/lv.jpg',
+      weibo:'https://weibo.com/7950995554/5203532588516669'
+    },
+    {
+      title:'Rockfish Weatherwear × SUSAN FANG',
+      titleKo:'락피시 웨더웨어 × 수잔 팡',
+      desc:'Rockfish Weatherwear 与 SUSAN FANG 合作系列。Haum 以独特造型演绎品牌联名系列。',
+      descKo:'락피시 웨더웨어와 수잔 팡 협업 시리즈. 하음이 독특한 스타일로 브랜드 컬래버레이션을 선보였습니다.',
+      color:'linear-gradient(135deg,#3ddc97 0%,#4ec3f7 50%,#ffc93c 100%)',
+      cover:'./images/rockfish2.jpg',
+      weibo:'https://weibo.com/7950995554/Q70Kc4kMD'
+    },
+    {
+      title:'Maison Kitsuné 站台',
+      titleKo:'메종 키츠네站台',
+      desc:'Haum 出席 Maison Kitsuné 品牌活动站台，以品牌造型亮相。',
+      descKo:'하음이 메종 키츠네 브랜드 이벤트에 참석하여 브랜드 스타일로 등장했습니다.',
+      color:'linear-gradient(135deg,#ff9a76 0%,#ffc93c 50%,#3ddc97 100%)',
+      cover:'./images/kitsune.jpg',
+      weibo:'https://weibo.com/7950995554/Q6cMUE0WD'
+    }
+  ]
+};
+
+/* ============ 状态 ============ */
+let currentCat = 'album';
+let currentConcept = 0;
+
+const elSelector = document.getElementById('conceptSelector');
+const elCover    = document.getElementById('conceptCover');
+const elDesc     = document.getElementById('conceptDesc');
+const elWeibo    = document.getElementById('conceptWeibo');
+
+/* ============ 渲染选择器 ============ */
+function renderSelector(){
+  const list = conceptData[currentCat];
+  elSelector.innerHTML = list.map((c, i) => `
+    <button class="concept-chip ${i===currentConcept?'active':''}" data-idx="${i}">
+      <span>${c.title}</span>
+      <span class="ko">${c.titleKo}</span>
+    </button>
+  `).join('');
+
+  elSelector.querySelectorAll('.concept-chip').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      currentConcept = parseInt(btn.dataset.idx, 10);
+      renderConcept();
+    });
+  });
+}
+
+/* ============ 主渲染 ============ */
+function renderConcept(){
+  const concept = conceptData[currentCat][currentConcept];
+
+  if(concept.cover){
+    elCover.innerHTML = `<img src="${concept.cover}" alt="${concept.title}">`;
+  }else{
+    elCover.innerHTML = `
+      <div class="ph" style="background:${concept.color};">
+        <div class="ph-title">${concept.title}</div>
+        <div class="ph-sub">此处等待 Haum 的封面图</div>
+      </div>`;
+  }
+
+  elDesc.innerHTML = `${concept.desc}<span class="ko">${concept.descKo}</span>`;
+  elWeibo.href = concept.weibo || '#';
+  renderSelector();
+}
+
+/* ============ 分类切换 ============ */
+document.getElementById('conceptTabs').addEventListener('click', e=>{
+  const btn = e.target.closest('.concept-tab');
+  if(!btn) return;
+  document.querySelectorAll('.concept-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  currentCat = btn.dataset.cat;
+  currentConcept = 0;
+  renderConcept();
+});
+
+renderConcept();
+
+/* ============================================================
+   直拍数据 — 已加入 B站封面缩略图（thumb 字段）
+   ============================================================ */
+const fancamData = {
+  official: [
+    {
+      song:'Pop Off Pop Off', songKo:'Pop Off Pop Off',
+      items:[
+        {type:'单视频', date:'260820', stage:'横版直拍｜恶魔还是天使 表情管理一等', desc:'横版直拍，表情管理一等', play:'—', link:'https://www.bilibili.com/video/BV1a8bf6fE1D/', thumb:'https://i1.hdslb.com/bfs/archive/0810e2625c4a3c80e89abd9deb6b16931f1cb575.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'260814', stage:'首支直拍｜夏日清爽的橘子汽水 主舞大人跳舞观赏性太好了', desc:'首支直拍，夏日清爽的橘子汽水', play:'—', link:'https://www.bilibili.com/video/BV1npgP6gEaS/', thumb:'https://i2.hdslb.com/bfs/archive/e64099083c724468b4967232f3c0fd5a5b38a504.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'260814', stage:'横版直拍｜一只笑眯眯的小橘猫 我的心要被融化啦', desc:'横版直拍，笑眯眯的小橘猫', play:'—', link:'https://www.bilibili.com/video/BV15RgA6bEts/', thumb:'https://i2.hdslb.com/bfs/archive/cc0e88ca0eaca75d3434eb5a1543d15be2dd6b37.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'260814', stage:'直拍｜紫发是独角兽小葡萄呀 今天表现力也爆表了', desc:'紫发造型，表现力爆表', play:'—', link:'https://www.bilibili.com/video/BV1FKbC6FEsg/', thumb:'https://i0.hdslb.com/bfs/archive/62e829e626fcb1bdf466684bd99ad484d302fe13.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'260814', stage:'横版直拍｜魅力紫色独角兽 这张脸完全是传奇', desc:'横版直拍，紫色独角兽', play:'—', link:'https://www.bilibili.com/video/BV1Cx8u63EKq/', thumb:'https://i1.hdslb.com/bfs/archive/75c1948d7d42d9954f4ec6f76b43b3fecaabbb0a.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'260820', stage:'直拍｜豹纹阿迪女 穿着简单动作更加清晰利落', desc:'豹纹阿迪女，动作清晰利落', play:'—', link:'https://www.bilibili.com/video/BV11k8J6gEgk/', thumb:'https://i2.hdslb.com/bfs/archive/6d7625127b8ab9433f22b918d09c8caa3158a4da.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'260820', stage:'直拍｜高马尾好清爽 亮色上衣和短裤一键步入海边沙滩', desc:'高马尾，海边沙滩风', play:'—', link:'https://www.bilibili.com/video/BV1pR8c6JEcC/', thumb:'https://i2.hdslb.com/bfs/archive/da69d2f3e3c28be661a689e9337862c00e1d2c4c.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'练习室自剪直拍｜私服好适配 舞姿太好看了', desc:'练习室自剪直拍', play:'—', link:'https://www.bilibili.com/video/BV12f8X6BEuh/', thumb:'https://i0.hdslb.com/bfs/archive/05c83bb508d07e0bb8f7c4685cafa926d8021d77.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'眼罩直拍｜这身穿搭完全y2k啊 即使遮掉一只眼睛依旧把舞台完成的很好', desc:'眼罩直拍，Y2K穿搭', play:'—', link:'https://www.bilibili.com/video/BV1Zo4d6REsF/', thumb:'https://i0.hdslb.com/bfs/archive/0acb39f7d9809bf3997ff54d5023ba34ae3f57f6.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'自剪直拍｜今天是机械猫呀 眼睛终于好了', desc:'机械猫，眼睛终于好了', play:'—', link:'https://www.bilibili.com/video/BV1yA4y6PEve/', thumb:'https://i2.hdslb.com/bfs/archive/ee816c391869297ede911d54e68ef8a510788c95.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜夏日气息扑面而来 笑容看得人心情好好', desc:'夏日气息扑面而来', play:'—', link:'https://www.bilibili.com/video/BV1GFbH69E3k/', thumb:'https://i2.hdslb.com/bfs/archive/f1fdf4b873567655abcf0e0532014882c585056e.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'Candy Pink Magic Hole Flip Phone', songKo:'Candy Pink Magic Hole Flip Phone',
+      items:[
+        {type:'单视频', date:'260814', stage:'首支直拍｜烟熏魔法少女 舞蹈控制力好棒', desc:'烟熏妆 + 粉色假发，魔法少女既视感', play:'—', link:'https://www.bilibili.com/video/BV1H9g36wEdv/', thumb:'https://i0.hdslb.com/bfs/archive/46e2cd55b5adde68b0f2fbc5cead29566536301e.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'404 (New Era)', songKo:'404 (New Era)',
+      items:[
+        {type:'单视频', date:'—', stage:'横版直拍｜双麻花辫太萌了 每一秒都笑眯眯的好可爱', desc:'双麻花辫，笑眯眯好可爱', play:'—', link:'https://www.bilibili.com/video/BV1pkFCzCErF/', thumb:'https://i0.hdslb.com/bfs/archive/851eb51aa6063e657f46b8617810570bde50dd44.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜真人芭比来袭 原来有人天生适配浅发色', desc:'真人芭比，天生适配浅发色', play:'—', link:'https://www.bilibili.com/video/BV1K76CBwEE8/', thumb:'https://i0.hdslb.com/bfs/archive/3717e2cf679e879e532b54dcb921ff0d57b376af.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'竖版直拍｜齐刘海+豹纹+荧光粉 今天完全是芭比照进现实吧', desc:'齐刘海+豹纹+荧光粉', play:'—', link:'https://www.bilibili.com/video/BV12tZLBaEB4/', thumb:'https://i0.hdslb.com/bfs/archive/a1b3c458eefa58f0b6be752d81ee56734f4f78b1.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜跳了原编舞 真的是最适合y2k的人 直接回到千禧年', desc:'原编舞，最适合Y2K的人', play:'—', link:'https://www.bilibili.com/video/BV1LfFazAEuP/', thumb:'https://i2.hdslb.com/bfs/archive/935bfa4c2c17adfef09cd50673846e53e4a727f3.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜完全是现实版的qq炫舞小人 服装也是千禧感满满', desc:'QQ炫舞小人既视感', play:'—', link:'https://www.bilibili.com/video/BV1XFcjznE8T/', thumb:'https://i0.hdslb.com/bfs/archive/75fdedca70aebc8103015c99859ca06480bdbc4c.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜今天是双马尾小兔叽 萌的我心颤', desc:'双马尾小兔叽', play:'—', link:'https://www.bilibili.com/video/BV1vm64BiEfd/', thumb:'https://i0.hdslb.com/bfs/archive/5fb21edb92ceb8d6efae664966769d5a4ea629b2.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜中短发也超适合 小猫的脸 姐姐的模样', desc:'中短发，小猫的脸姐姐的模样', play:'—', link:'https://www.bilibili.com/video/BV1wEZDBxEeK/', thumb:'https://i1.hdslb.com/bfs/archive/e17622c24b9e4a720b89b599232c150c1aa995b9.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜手长腿长的跳舞观赏性就是高 不愧是主舞', desc:'手长腿长，不愧是主舞', play:'—', link:'https://www.bilibili.com/video/BV1FuFFz7E26/', thumb:'https://i1.hdslb.com/bfs/archive/32b879b8da88851e5221efc327b4e3358a8bf70f.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'横版直拍｜艾莎公主的美貌就是要近距离观看', desc:'艾莎公主美貌', play:'—', link:'https://www.bilibili.com/video/BV1BVcMzzESs/', thumb:'https://i1.hdslb.com/bfs/archive/86a1e5012567289f827b095df8aa11080d66131e.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜这个女孩和千禧风 鼓风机绝配 感觉回到2000s', desc:'千禧风+鼓风机绝配', play:'—', link:'https://www.bilibili.com/video/BV1K3cqzeEUt/', thumb:'https://i0.hdslb.com/bfs/archive/a29a4e29f3681d1a82968885409b736c09a9ccef.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜今天是卷卷发的艾莎公主 千禧女神继续发力中', desc:'卷卷发艾莎公主', play:'—', link:'https://www.bilibili.com/video/BV1MXFHz4E6g/', thumb:'https://i2.hdslb.com/bfs/archive/fa1c6789afa65a57a930f031d5dcaa472a4c885d.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜世界上最适合披发的人 甩头太好看了', desc:'披发甩头太好看了', play:'—', link:'https://www.bilibili.com/video/BV1Rb6qBbEKa/', thumb:'https://i2.hdslb.com/bfs/archive/eadc2107014c63b662fc8500d1fe5ccd0b98d7cc.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'横版直拍｜近距离看脸完全是波斯猫', desc:'近距离看脸完全是波斯猫', play:'—', link:'https://www.bilibili.com/video/BV1416qBUEvJ/', thumb:'https://i0.hdslb.com/bfs/archive/ef38cee06446dd8163b03d9991fc8a7b388e7c16.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'首场打歌直拍｜舞台魅力无上限 表现力满分', desc:'首场打歌，表现力满分', play:'—', link:'https://www.bilibili.com/video/BV1y6zfBqEqo/', thumb:'https://i0.hdslb.com/bfs/archive/b464899c237cd76c4f26e16f5aeec50d33e23375.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'回归主打曲直拍｜星味直接溢出屏幕了', desc:'星味溢出屏幕', play:'—', link:'https://www.bilibili.com/video/BV1p1zBBCEpJ/', thumb:'https://i0.hdslb.com/bfs/archive/8aa14936e2a3ae286d61d15e36a65dda88be5ed8.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'I DO ME', songKo:'I DO ME',
+      items:[
+        {type:'单视频', date:'250228', stage:'出道曲高清直拍｜星船新女团KiiiKiii HAUM出道曲', desc:'出道曲高清直拍', play:'—', link:'https://www.bilibili.com/video/BV1sG9PYfEwW/', thumb:'https://i0.hdslb.com/bfs/archive/27877d64d71f6f2964a3a6db2ef1babd81815941.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'250306', stage:'草莓果酱直拍', desc:'草莓果酱直拍', play:'—', link:'https://www.bilibili.com/video/BV1EFZjYcEhf/', thumb:'https://i2.hdslb.com/bfs/archive/1fcb514c5b668982fd0d453903171575f59fe4bf.jpg@320w_180h.jpg'},
+        {type:'合集', date:'250302', stage:'4K直拍合集 250302 人歌', desc:'4K直拍合集', play:'—', link:'https://www.bilibili.com/video/BV16f9wYSEwZ/', thumb:'https://i0.hdslb.com/bfs/archive/a8ff68e464acbf940f61901ce5e86dad98220a2d.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'Delulu', songKo:'Delulu',
+      items:[
+        {type:'单视频', date:'—', stage:'直拍｜和紫色最适配的女人 完全千禧风', desc:'紫色最适配，完全千禧风', play:'—', link:'https://www.bilibili.com/video/BV1kAPszwExV/', thumb:'https://i1.hdslb.com/bfs/archive/22de66c1e8d269a2cffc4cd78d305197a1d8e541.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'直拍｜末场打歌 依旧紫色搭配 每个造型在她身上都会变好看', desc:'末场打歌，紫色搭配', play:'—', link:'https://www.bilibili.com/video/BV1hLPXzoEhD/', thumb:'https://i1.hdslb.com/bfs/archive/48ff316eaf589778f7111a46cb049643b0114fae.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'首场打歌直拍｜跳得表现力太好能让人忽略服装和碎的编舞', desc:'首场打歌，表现力太好', play:'—', link:'https://www.bilibili.com/video/BV1upPCzwEfH/', thumb:'https://i2.hdslb.com/bfs/archive/0adfad78b08da34feed0f099e651fbf1d75ee6b3.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'Dancing Alone', songKo:'Dancing Alone',
+      items:[
+        {type:'单视频', date:'250727', stage:'歌谣大战直拍｜不愧是专门对着镜子练过的头发', desc:'歌谣大战，头发甩得绝了', play:'—', link:'https://www.bilibili.com/video/BV1Pw8Hz4EYB/', thumb:'https://i2.hdslb.com/bfs/archive/619a16f7832f8c1039652bfceba397c0d0435fdd.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'250810', stage:'4K竖版直拍', desc:'4K竖版直拍', play:'—', link:'https://www.bilibili.com/video/BV1YwbNztErw/', thumb:'https://i0.hdslb.com/bfs/archive/5a6744a1a4a9b525b9c3b3dabe2a28f0fbd5741b.jpg@320w_180h.jpg'},
+        {type:'合集', date:'—', stage:'打歌舞台直拍合集', desc:'打歌舞台直拍合集', play:'—', link:'https://www.bilibili.com/video/BV1DMS2BTEmr/', thumb:'https://i0.hdslb.com/bfs/archive/ccb1be441177122ea1d29fcc70dcca4098d66569.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'BTG', songKo:'BTG',
+      items:[
+        {type:'单视频', date:'250406', stage:'4K竖版直拍', desc:'4K竖版直拍', play:'—', link:'https://www.bilibili.com/video/BV1T9dnYXExM/', thumb:'https://i1.hdslb.com/bfs/archive/be2acfd2bd1cd0598bc90cf4ec74f7aa9a701e3e.jpg@320w_180h.jpg'},
+        {type:'合集', date:'—', stage:'BTG 直拍合集', desc:'BTG 直拍合集', play:'—', link:'https://weibo.com/7950995554/5154640869983048'}
+      ]
+    }
+  ],
+  fan: [
+    {
+      song:'Pop Off Pop Off', songKo:'Pop Off Pop Off',
+      items:[
+        {type:'单视频', date:'—', stage:'自剪直拍｜今天是机械猫呀 眼睛终于好了', desc:'机械猫，眼睛终于好了', play:'—', link:'https://www.bilibili.com/video/BV1yA4y6PEve/', thumb:'https://i2.hdslb.com/bfs/archive/ee816c391869297ede911d54e68ef8a510788c95.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'260827', stage:'饭拍｜2026 K-WORLD DREAM AWARDS', desc:'K-WORLD DREAM AWARDS 饭拍', play:'—', link:'https://www.bilibili.com/video/BV1WQtF61Ei7/', thumb:'https://i1.hdslb.com/bfs/archive/997f39e9daef0fee7073c896d1d632d4867d10f8.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'260917', stage:'4K校庆直拍｜成信女子大学', desc:'成信女子大学校庆直拍', play:'—', link:'https://www.bilibili.com/video/BV1Fuey6yEWX/', thumb:'https://i0.hdslb.com/bfs/archive/479a767c2f6ca2463ff9ade8cf1f388397b373ff.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'眼罩直拍｜这身穿搭完全y2k啊 即使遮掉一只眼睛依旧把舞台完成的很好', desc:'眼罩直拍，Y2K穿搭', play:'—', link:'https://www.bilibili.com/video/BV1Zo4d6REsF/', thumb:'https://i0.hdslb.com/bfs/archive/0acb39f7d9809bf3997ff54d5023ba34ae3f57f6.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'Candy Pink Magic Hole Flip Phone', songKo:'Candy Pink Magic Hole Flip Phone',
+      items:[
+        {type:'单视频', date:'—', stage:'HAUM 直拍', desc:'Candy Pink Magic Hole Flip Phone 直拍', play:'—', link:'https://www.bilibili.com/video/BV1GRbD6zED2/', thumb:'https://i0.hdslb.com/bfs/archive/8479b02d524fbb27453ed599b74bb9797dd3e18b.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'BTG', songKo:'BTG',
+      items:[
+        {type:'单视频', date:'—', stage:'直拍｜身材真的是仙品 最适合牛仔裤的人', desc:'身材仙品，最适合牛仔裤', play:'—', link:'https://www.bilibili.com/video/BV181pDzPEEV/', thumb:'https://i1.hdslb.com/bfs/archive/1c5871c2d937efbb9b27da23ba017a705a4a9f75.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'出道SC舞台直拍｜她的舞台魅力真的无敌', desc:'出道SC舞台直拍', play:'—', link:'https://www.bilibili.com/video/BV1vEoqYyEqe/', thumb:'https://i2.hdslb.com/bfs/archive/8a3370fa46ab1d83f1b4bd92397ad305f1188236.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'250411', stage:'自制竖版直拍 KBS 缎带领花小灰裙', desc:'KBS 缎带领花小灰裙', play:'—', link:'https://www.bilibili.com/video/BV17t5kzNE6i/', thumb:'https://i2.hdslb.com/bfs/archive/fc0dffb75bf2bb1a4ecab18f9134095cc7b4e7a9.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'Dancing Alone', songKo:'Dancing Alone',
+      items:[
+        {type:'单视频', date:'250727', stage:'竖版直拍 合作舞台Twinkle Twins + 新曲Dancing Alone', desc:'SBS歌谣大战合作舞台+新曲', play:'—', link:'https://www.bilibili.com/video/BV1eK8VzDEaU/', thumb:'https://i1.hdslb.com/bfs/archive/8ccecf3180ee57d3facb6cd78866159c5b34449a.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'250804', stage:'蔚山夏季庆典直拍｜完全挪不开视线', desc:'蔚山夏季庆典', play:'—', link:'https://www.bilibili.com/video/BV1FftwzfEXC/', thumb:'https://i1.hdslb.com/bfs/archive/a240ee7b81992c35d92e8000fcc70a6f9d277914.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'250809', stage:'直拍｜是洋娃娃！', desc:'洋娃娃既视感', play:'—', link:'https://www.bilibili.com/video/BV1Wct8zGEca/', thumb:'https://i2.hdslb.com/bfs/archive/c616528dccce4689e531a37dcab024a5b59fb305.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'我最红 (Cover)', songKo:'내가 제일 잘 나가 (Cover)',
+      items:[
+        {type:'单视频', date:'250511', stage:'KCON JAPAN 饭拍', desc:'神级直拍！主舞实力全开', play:'—', link:'https://www.bilibili.com/video/BV13iEgz5EFU/', thumb:'https://i1.hdslb.com/bfs/archive/84a5cf54537525d8f136e86781ae4bd904f8863c.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'—', stage:'haum-我最红 focus｜清凉一下', desc:'清凉一下，我最红 focus', play:'—', link:'https://www.bilibili.com/video/BV1Egbsz9Eti/', thumb:'https://i1.hdslb.com/bfs/archive/4ae84611a78e2ea314e46b426adb1908212b6f5c.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'其他舞台', songKo:'기타 무대',
+      items:[
+        {type:'单视频', date:'260913', stage:'LCK总决赛 饭拍《Leave Your Mark pt. 2》', desc:'LCK总决赛舞台', play:'—', link:'https://www.bilibili.com/video/BV13kYv6TEnt/', thumb:'https://i2.hdslb.com/bfs/archive/751378fbbfd788ec176d270c4b589a55092fb403.jpg@320w_180h.jpg'},
+        {type:'合集', date:'260916', stage:'嘉泉大学校庆 4K直拍合集', desc:'嘉泉大学校庆直拍合集', play:'—', link:'https://www.bilibili.com/video/BV1cueG6sEvA/', thumb:'https://i1.hdslb.com/bfs/archive/acaa6633c26aa2cb1ea0b4eac4e5246b2b140c4b.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'251206', stage:'AAA颁奖典礼合作舞台｜星味儿爆棚的小豹子', desc:'AAA颁奖典礼合作舞台', play:'—', link:'https://www.bilibili.com/video/BV1A52yByErg/', thumb:'https://i1.hdslb.com/bfs/archive/e03a205ec09e4724ccaf434efc4a86c2c4341ccc.jpg@320w_180h.jpg'},
+        {type:'单视频', date:'250504', stage:'LIV Golf Korea Concert — GROUNDWORK FOCUS', desc:'LIV Golf Korea Concert', play:'—', link:'https://www.bilibili.com/video/BV1pQVRzVELQ/', thumb:'https://i1.hdslb.com/bfs/archive/4cf148d86020d05a17840b07449d5baa33eb6765.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'4walls (Cover)', songKo:'4 Walls (Cover)',
+      items:[
+        {type:'单视频', date:'—', stage:'Cover 直拍｜空灵的音色和纤细的四肢 这个直拍观赏性太好了', desc:'空灵音色+纤细四肢', play:'—', link:'https://www.bilibili.com/video/BV1YdLw6qEQd/', thumb:'https://i0.hdslb.com/bfs/archive/b9000e7087d30965557d3ce925b4838f1be72e07.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'UNDERDOGS', songKo:'UNDERDOGS',
+      items:[
+        {type:'单视频', date:'260517', stage:'4K竖版直拍 fancon DAY2', desc:'fancon DAY2 竖版直拍', play:'—', link:'https://www.bilibili.com/video/BV1DELp6pEB1/', thumb:'https://i0.hdslb.com/bfs/archive/972d5772c4a79b5c02a48177d096082abc87d14c.jpg@320w_180h.jpg'}
+      ]
+    },
+    {
+      song:'合作舞台', songKo:'협업 무대',
+      items:[
+        {type:'单视频', date:'—', stage:'合作舞台直拍｜没有人可以只看一遍', desc:'合作舞台直拍', play:'—', link:'https://www.bilibili.com/video/BV1p52yByEGC/', thumb:'https://i2.hdslb.com/bfs/archive/4c688e7c06af13641ba92868fa315a5dffd8bf79.jpg@320w_180h.jpg'}
+      ]
+    }
+  ]
+};
+
+function renderFancam(type){
+  const container = document.getElementById('panel-' + type);
+  const groups = fancamData[type];
+
+  container.innerHTML = groups.map(g => `
+    <details class="song" ${type==='fan'&&g.song==='我最红 (Cover)'?'open':''}>
+      <summary>
+        <div class="summary-left"><span class="dot"></span><span>${g.song}<span class="ko">${g.songKo}</span></span></div>
+        <span class="summary-arrow">▼</span>
+      </summary>
+      <div class="cam-list">
+        ${g.items.map(it => `
+          <a class="cam-item" href="${it.link}" target="_blank" rel="noopener">
+            <div class="cam-thumb" ${it.thumb ? '' : 'style="background:linear-gradient(135deg,#ff6b4a,#ffc93c);"'}>
+              ${it.thumb
+                ? `<img src="${it.thumb}" alt="缩略图" referrerpolicy="no-referrer" loading="lazy">`
+                : '<span>▶</span>'}
+            </div>
+            <div class="cam-info">
+              <h5>
+                ${it.stage}
+                <span class="cam-date">${it.date}</span>
+                <span class="cam-type">${it.type}</span>
+                ${it.play!=='—'?`<span class="cam-play">▶ ${it.play}</span>`:''}
+              </h5>
+              <p>${it.desc}</p>
+            </div>
+            <span class="cam-go">去B站 →</span>
+          </a>
+        `).join('')}
+      </div>
+    </details>
+  `).join('');
+}
+
+renderFancam('official');
+renderFancam('fan');
+
+document.querySelectorAll('.fancam-tab').forEach(tab=>{
+  tab.addEventListener('click', ()=>{
+    document.querySelectorAll('.fancam-tab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    const type = tab.dataset.tab;
+    document.getElementById('panel-official').style.display = type==='official' ? 'block' : 'none';
+    document.getElementById('panel-fan').style.display = type==='fan' ? 'block' : 'none';
+  });
+});
+
+/* ============================================================
+   直播数据 — thumb 已全部替换为 B 站官方封面
+   ============================================================ */
+const liveData = [
+  {
+    title:'251114 HAUM生日Berriz直播',
+    titleKo:'251114 HAUM 생일 Berriz 라이브',
+    desc:'Haum 生日直播全场中字，47分钟完整版。生日当天与粉丝的温馨互动。',
+    descKo:'하음 생일 라이브 전체 자막, 47분 풀버전. 생일 당일 팬들과의 따뜻한 소통.',
+    dur:'47:00', tags:['中字','生日','全场'],
+    bg:'linear-gradient(135deg,#ff6b4a,#ffc93c)',
+    thumb:'https://i2.hdslb.com/bfs/archive/0f981ca616bb9091b61e9b616b0b2a0588f21bdf.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV1EcyJB8EHC/'
+  },
+  {
+    title:'260215 HAUM×KYA Berriz直播',
+    titleKo:'260215 HAUM×KYA Berriz 라이브',
+    desc:'Haum 与 KYA 双人直播，35分钟。两人互相吐槽的化学反应太有趣了。',
+    descKo:'하음과 KYA의 2인 라이브, 35분. 서로 티키타카하는 케미가 너무 재미있어요.',
+    dur:'35:00', tags:['中字','双人','日常'],
+    bg:'linear-gradient(135deg,#4ec3f7,#3ddc97)',
+    thumb:'https://i2.hdslb.com/bfs/archive/1be1ef947ef2dcc8312ad887bcf92f383e536f02.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV1vZZMBZEvD/'
+  },
+  {
+    title:'260312 JIYU×HAUM Berriz直播',
+    titleKo:'260312 JIYU×HAUM Berriz 라이브',
+    desc:'Haum 与 JIYU 双人直播，46分钟。河音在直播中展现了温柔细心的一面。',
+    descKo:'하음과 JIYU의 2인 라이브, 46분. 하음이 라이브에서 다정하고 세심한 면모를 보여주었습니다.',
+    dur:'46:00', tags:['中字','双人'],
+    bg:'linear-gradient(135deg,#a855f7,#ff9a76)',
+    thumb:'https://i2.hdslb.com/bfs/archive/525919c242902d7588991dee669a54bbe0e9fb84.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV1wuckz3EpN/'
+  },
+  {
+    title:'在宿舍直播的郭小喵 260724 bubble live',
+    titleKo:'기숙사에서 라이브한 곽냥이 260724 bubble live',
+    desc:'260724 bubble live 音首全场中字。在宿舍直播的郭小喵，与粉丝分享日常。',
+    descKo:'260724 bubble live 전체 자막. 기숙사에서 라이브한 곽냥이, 팬들과 일상을 공유했습니다.',
+    dur:'—', tags:['中字','宿舍','日常'],
+    bg:'linear-gradient(135deg,#ff6b4a,#3ddc97)',
+    thumb:'https://i2.hdslb.com/bfs/archive/57cf094ecfa642d2523e5a745839996143454915.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV19age6yEVJ/'
+  },
+  {
+    title:'HAUM SUI "HASUI" 直播',
+    titleKo:'HAUM SUI "HASUI" 라이브',
+    desc:'260831 HAUM SUI 双人直播。函数z双人直播，两人互动超有趣。',
+    descKo:'260831 HAUM SUI 2인 라이브. 두 사람의 케미가 너무 재미있어요.',
+    dur:'—', tags:['中字','双人','HASUI'],
+    bg:'linear-gradient(135deg,#4ec3f7,#a855f7)',
+    thumb:'https://i2.hdslb.com/bfs/archive/56f46284a3c8f5adeab2e6d4ecd12e9902ec27e7.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV1jJta6oEUK/'
+  },
+  {
+    title:'LEESOL HAUM "KiiiKiii的成熟女人们"',
+    titleKo:'LEESOL HAUM "KiiiKiii의 성숙한 여자들"',
+    desc:'光是直播标题就已经够好笑了！KiiiKiii LEESOL HAUM 双人直播。',
+    descKo:'제목만으로도 웃긴 KiiiKiii LEESOL HAUM 2인 라이브.',
+    dur:'—', tags:['中字','双人','搞笑'],
+    bg:'linear-gradient(135deg,#3ddc97,#ffc93c)',
+    thumb:'https://i0.hdslb.com/bfs/archive/a092388fd80bb724d788da522f80f09a5507e712.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV1C6hv6DEFs/'
+  },
+  {
+    title:'KYA HAUM "six seven" 直播',
+    titleKo:'KYA HAUM "six seven" 라이브',
+    desc:'260607 新发色瞩目组 KYA HAUM 双人直播！',
+    descKo:'260607 새 머리색 주목조 KYA HAUM 2인 라이브!',
+    dur:'—', tags:['中字','双人','新发色'],
+    bg:'linear-gradient(135deg,#ff9a76,#4ec3f7)',
+    thumb:'https://i1.hdslb.com/bfs/archive/f0d43a7ea422bb6bc2eed9baec26822f88952c49.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV1nLEh6uEvx/'
+  },
+  {
+    title:'20250904 KiiiKiii Haum & Kya 直播',
+    titleKo:'20250904 KiiiKiii Haum & Kya 라이브',
+    desc:'20250904 高清中字。Haum 与 Kya 的直播互动。',
+    descKo:'20250904 고화질 자막. 하음과 Kya의 라이브 소통.',
+    dur:'—', tags:['中字','双人'],
+    bg:'linear-gradient(135deg,#a855f7,#ff6b4a)',
+    thumb:'https://i2.hdslb.com/bfs/archive/d1ab625d7bfff6ed089e7f6202888c15cba3421a.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV1K5HvzjEnB/'
+  },
+  {
+    title:'LEESOL & HAUM 直播 260411',
+    titleKo:'LEESOL & HAUM 라이브 260411',
+    desc:'中字。KiiiKiii 组合 LEESOL & HAUM 的直播！',
+    descKo:'자막. KiiiKiii LEESOL & HAUM의 라이브!',
+    dur:'—', tags:['中字','双人'],
+    bg:'linear-gradient(135deg,#3ddc97,#ff9a76)',
+    thumb:'https://i1.hdslb.com/bfs/archive/db8a33f1bf16cb07a51e78557975484b59013680.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV1L2QgBpE6j/'
+  },
+  {
+    title:'HAUM SUI JIYU "2006年出生的人们"',
+    titleKo:'HAUM SUI JIYU "2006년생들"',
+    desc:'260529 06z又来给TiiiKiii直播啦~ 三人直播标题"2006年出生的人们"。',
+    descKo:'260529 06z가 또 TiiiKiii에게 라이브를 해줬어요~ 3인 라이브 제목 "2006년생들".',
+    dur:'—', tags:['中字','三人','06z'],
+    bg:'linear-gradient(135deg,#ffc93c,#a855f7)',
+    thumb:'https://i0.hdslb.com/bfs/archive/e27bb6c21203b796f47b681549bd0ba48d62714b.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV1dxVa6QEDN/'
+  },
+  {
+    title:'SUI & HAUM 聊天局 250811',
+    titleKo:'SUI & HAUM 수다 타임 250811',
+    desc:'中字。KiiiKiii 组合 SUI & HAUM 的聊天局！',
+    descKo:'자막. KiiiKiii SUI & HAUM의 수다 타임!',
+    dur:'—', tags:['中字','双人'],
+    bg:'linear-gradient(135deg,#4ec3f7,#3ddc97)',
+    thumb:'https://i1.hdslb.com/bfs/archive/34b34121eb89d24e2385654b7c623bc779cf32bf.jpg@320w_180h.jpg',
+    link:'https://www.bilibili.com/video/BV1NkbbzEEV7/'
+  }
+];
+
+document.getElementById('liveGrid').innerHTML = liveData.map(l => `
+  <div class="live-card">
+    <div class="live-thumb" style="${l.thumb ? `background-image:url('${l.thumb}');` : `background:${l.bg};`}">
+      <span class="live-badge">LIVE</span>
+      <span style="position:relative;z-index:2;font-size:2rem;">🎙️</span>
+      <span class="live-dur">${l.dur}</span>
+    </div>
+    <div class="live-body">
+      <h5>${l.title}<span class="ko">${l.titleKo}</span></h5>
+      <p>${l.desc}</p>
+      <p class="ko">${l.descKo}</p>
+      <div class="live-tags">${l.tags.map(t=>`<span class="live-tag">${t}</span>`).join('')}</div>
+      <div class="live-actions"><a class="btn-live" href="${l.link}" target="_blank" rel="noopener">▶ 去B站看 / B站에서 보기</a></div>
+    </div>
+  </div>
+`).join('');
+
+/* ============================================================
+   TMI 数据
+   ============================================================ */
+const tmiData = [
+  {q:'Haum 的 MBTI 是？', qKo:'하음의 MBTI는?', a:'ESTJ（本人：没人相信我是E人）', aKo:'ESTJ (본인: 아무도 내가 E인 걸 안 믿어)'},
+  {q:'代表色是？', qKo:'대표 색은?', a:'绿色 💚', aKo:'초록색 💚'},
+  {q:'官方 emoji 是？', qKo:'공식 이모지는?', a:'🐮 牛', aKo:'🐮 소'},
+  {q:'血型是？', qKo:'혈액형은?', a:'O型', aKo:'O형'},
+  {q:'视力怎么样？', qKo:'시력은?', a:'完全不近视的好眼睛👀（无度数）', aKo:'완전히 근시 없는 좋은 눈👀 (도수 없음)'},
+  {q:'喜欢的昵称？', qKo:'좋아하는 별명은?', a:'狗狗喵、宝宝猫咪', aKo:'멍냥이, 아기고양이'},
+  {q:'魅力点是？', qKo:'매력 포인트는?', a:'脸颊肉', aKo:'볼살'},
+  {q:'最常说的话？', qKo:'가장 자주 하는 말은?', a:'“我吗？”（经常会再次确认）', aKo:'"나요?" (자주 다시 확인해요)'},
+  {q:'外貌小特征？', qKo:'외모 특징은?', a:'小时候受伤所以有断眉', aKo:'어릴 때 다쳐서 끊긴 눈썹이 있어요'},
+  {q:'脸颊肉有什么秘密？', qKo:'볼살의 비밀은?', a:'左边的脸颊肉更软', aKo:'왼쪽 볼살이 더 부드러워요'},
+  {q:'耳朵有什么特点？', qKo:'귀의 특징은?', a:'耳朵很软，可以随便捏', aKo:'귀가 매우 부드러워서 마음대로 만질 수 있어요'},
+  {q:'睡觉功力如何？', qKo:'잠자는 실력은?', a:'特别爱睡觉，沾上床3秒就可以睡着', aKo:'잠을 특히 좋아해서 침대에 닿으면 3초 만에 잠들 수 있어요'},
+  {q:'学过哪些舞蹈？', qKo:'어떤 춤을 배웠나요?', a:'芭蕾舞和K-POP编舞等多种舞蹈', aKo:'발레와 K-POP 안무 등 다양한 춤을 배웠습니다'},
+  {q:'近期喜欢的东西？', qKo:'요즘 좋아하는 것은?', a:'包括护手霜在内的有香气的东西，肥皂的香味', aKo:'핸드크림을 포함한 향기 나는 것, 비누 향기'},
+  {q:'珍惜的东西是？', qKo:'아끼는 것은?', a:'舞蹈练习专用的运动鞋', aKo:'댄스 연습 전용 운동화'},
+  {q:'喜欢的颜色？', qKo:'좋아하는 색은?', a:'🩵🤍', aKo:'🩵🤍'},
+  {q:'喜欢的季节？', qKo:'좋아하는 계절은?', a:'冬天', aKo:'겨울'},
+  {q:'喜欢的数字？', qKo:'좋아하는 숫자는?', a:'8️⃣', aKo:'8️⃣'},
+  {q:'最喜欢的饮品？', qKo:'가장 좋아하는 음료는?', a:'巧克力牛奶', aKo:'초코 우유'},
+  {q:'喜欢什么卡通角色？', qKo:'좋아하는 캐릭터는?', a:'帕恰狗 / 小马宝莉：苹果嘉儿', aKo:'파차쿠 / 포니: 애플잭'},
+  {q:'学校里最好的科目？', qKo:'학교에서 가장 잘한 과목은?', a:'体育', aKo:'체육'},
+  {q:'小时候的梦想？', qKo:'어릴 적 꿈은?', a:'芭蕾舞者', aKo:'발레리나'},
+  {q:'决定成为偶像的歌？', qKo:'아이돌을 꿈꾸게 한 곡은?', a:'IVE〈LOVE DIVE〉', aKo:'IVE 〈LOVE DIVE〉'},
+  {q:'每次去日本一定会买？', qKo:'일본에 갈 때마다 꼭 사는 것은?', a:'蜜瓜包 🍈', aKo:'멜론빵 🍈'},
+  {q:'尴尬时的反应？', qKo:'어색할 때 반응은?', a:'像机器人一样“故障”，然后开始笑', aKo:'로봇처럼 고장 난 척하다가 웃음'},
+  {q:'昵称有哪些？', qKo:'별명은?', a:'Hip Girl / Haume / Kenyangi（猫咪）', aKo:'Hip Girl / 하음이 / 케냥이'},
+  {q:'宿舍最爱做的事？', qKo:'숙소에서 가장 좋아하는 것은?', a:'睡觉', aKo:'자기'},
+  {q:'被说像哪些艺人？', qKo:'닮은꼴 연예인은?', a:'STAYC ISA / 孔升妍', aKo:'STAYC ISA / 공승연'},
+  {q:'队内定位是？', qKo:'팀 내 포지션은?', a:'Vocal · Dance · Rap · Visual', aKo:'보컬 · 댄스 · 랩 · 비주얼'},
+  {q:'KiiiKiii 的粉丝名叫什么？', qKo:'KiiiKiii 팬덤 이름은?', a:'TiiiKiii', aKo:'TiiiKiii'}
+];
+
+document.getElementById('tmiGrid').innerHTML = tmiData.map((d, i) => `
+  <div class="tmi-card" data-i="${i}">
+    <div class="tmi-inner">
+      <div class="tmi-face tmi-front"><h5>${d.q}</h5><span class="ko">${d.qKo}</span></div>
+      <div class="tmi-face tmi-back"><p>${d.a}</p><span class="ko">${d.aKo}</span></div>
+    </div>
+  </div>
+`).join('');
+
+document.getElementById('tmiGrid').addEventListener('click', e=>{
+  const card = e.target.closest('.tmi-card');
+  if(card) card.classList.toggle('flipped');
+});
+
+/* ============================================================
+   滚动入场动画
+   ============================================================ */
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); } });
+}, {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ============================================================
+   导航高亮
+   ============================================================ */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const navIO = new IntersectionObserver(entries=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){
+      const id = en.target.id;
+      navLinks.forEach(a=>{ a.classList.toggle('active', a.getAttribute('href') === '#' + id); });
+    }
+  });
+}, {rootMargin:'-45% 0px -50% 0px'});
+sections.forEach(s=>navIO.observe(s));
+</script>
+
+</body>
+</html>
